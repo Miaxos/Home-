@@ -155,6 +155,11 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" ================ NERDTree Plugin ========================
+
+" Show hidden files inside NERDTree
+let NERDTreeShowHidden=1
+
 " ================ Vim GitGutter ========================
 
 set updatetime=100
