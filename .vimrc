@@ -12,6 +12,9 @@
 set nocompatible
 filetype off                  " required
 
+" Leeader
+let mapleader = 'ù'
+
 " ================ General Config ====================
 
 set number                      "Line numbers are good
@@ -48,6 +51,9 @@ Plugin 'airblade/vim-gitgutter'
 " ## Search
 " -> option
 Plugin 'haya14busa/incsearch.vim'
+" ## Fuzzy Find
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
 
 " Plugin 'kien/ctrlp.vim'
 " Plugin 'jelera/vim-javascript-syntax'
@@ -91,7 +97,6 @@ endif
 "
 " ### Commentary
 
-let mapleader = 'ù'
 vnoremap <Leader>c :s!^!#!<CR>
 vnoremap <Leader>C :s!^#!!<CR>
 
@@ -105,8 +110,8 @@ map <C-J> <C-D>
 map <C-L> :bnext<CR>
 map <C-H> :bprev<CR>
 
-" open nerd tree
-map <C-P> :NERDTreeToggle<CR>
+" close buffer with CTRL
+map <C-X> :bd<CR>
 
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
@@ -159,6 +164,19 @@ set expandtab
 
 " Show hidden files inside NERDTree
 let NERDTreeShowHidden=1
+" Autoquit NerdTREE after openning a file
+let NERDTreeQuitOnOpen=1
+
+" open nerd tree
+map <C-P> :NERDTreeToggle<CR>
+
+" open nerd tree at the file with ù+p
+nnoremap <Leader>p :NERDTreeFind<CR>
+
+" To disable the weird ? for help
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 
 " ================ Vim GitGutter ========================
 

@@ -22,6 +22,9 @@ do
  source "$file"
 done
 
+# fzf completion
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # If we want to launch a tmux windows each time we launch terminal ?
 # if [ "$TMUX" = "" ]; then exec tmux; fi
 

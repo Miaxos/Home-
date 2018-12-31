@@ -16,6 +16,11 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Ruby path
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
+# ==================== Fzf =======================
+
+# Ignore node_modules
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+
 # ==================== GLOBAL =======================
 #
 # Set global EDITOR for terminal
