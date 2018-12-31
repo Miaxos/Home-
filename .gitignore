@@ -1,2 +1,4 @@
 # To not share our secrets
 secret.bashrc
+
+.DS_Store

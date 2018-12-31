@@ -1,0 +1,5 @@
+pane	du	1	:nvim	1	:*	0	:/Users/anthonygriffon/Documents/DU/Accellero/madgwick_py	0	nvim	:nvim .
+pane	du	1	:nvim	1	:*	1	:/Users/anthonygriffon/Documents/DU/Accellero/socketio-Accelero	1	nvim	:nvim ../madgwick_py/madgwickahrs.py
+pane	du	1	:nvim	1	:*	2	:/Users/anthonygriffon/Documents/DU/Accellero/madgwick_py	0	bash	:
+window	du	1	1	:*	55f3,278x65,0,0[278x39,0,0{140x39,0,0,0,137x39,141,0,4},278x25,0,40,2]
+state	du	

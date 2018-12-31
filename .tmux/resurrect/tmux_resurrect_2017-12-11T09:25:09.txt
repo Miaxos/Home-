@@ -1,0 +1,7 @@
+pane	du	1	:nvim	1	:*	0	:/Users/anthonygriffon/Documents/DU/Accellero/madgwick_py	1	nvim	:nvim .
+pane	du	1	:nvim	1	:*	1	:/Users/anthonygriffon/Documents/DU/Gait-Tracking-With-x-IMU/Gait Tracking With x-IMU	0	nvim	:nvim Script.m
+pane	du	1	:nvim	1	:*	2	:/Users/anthonygriffon/Documents/DU/Accellero/madgwick_py	0	Python	:/usr/local/Cellar/python3/3.6.3/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python
+pane	du	2	:bash	0	:#-	0	:/Users/anthonygriffon/Downloads	1	bash	:
+window	du	1	1	:*	d590,137x65,0,0[137x54,0,0{71x54,0,0,1,65x54,72,0,2},137x10,0,55,3]
+window	du	2	0	:#-	c6c1,137x65,0,0,4
+state	du	
