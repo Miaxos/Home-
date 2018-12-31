@@ -1,5 +1,6 @@
 IGNORE_FILES="install.sh|remove.sh|README.md|.git|.gitignore"
 
+
 HOME=~/
 
 find -E . -mindepth 1 -maxdepth 1 -a ! -regex "./($IGNORE_FILES)" | while read i
