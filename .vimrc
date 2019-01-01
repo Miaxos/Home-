@@ -68,7 +68,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'tpope/vim-commentary'
 " Plugin 'Yggdroot/indentLine'
 " Plugin 'Vimjas/vim-python-pep8-indent'
-" Plugin 'w0rp/ale'
+" ## Linting
+" Asyncronous linting with ALE
+Plugin 'w0rp/ale'
 " Plugin 'ap/vim-css-color'
 
 call vundle#end()            " required
@@ -188,6 +190,8 @@ set updatetime=100
 " JS - AlE Correction
 let g:ale_linters = { 'javascript': ['eslint'] }
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_set_highlights = 1
 let g:ale_javascript_eslint_use_global = 0
 let g:multi_cursor_next_key='<C-n>'
 

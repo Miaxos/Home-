@@ -782,3 +782,40 @@ Jan 01 18:49 : player: played "Non-Album/Electric Press Kit/Bullet in My Head.mp
 Jan 01 18:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
 Jan 01 18:53 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
 Jan 01 18:54 : player: played "Non-Album/Flume/Drop the Game.mp3"
+Jan 01 18:57 : exception: Failed to decode /Users/anthonygriffon/Music/Non-Album/Imagine Dragons/Thunder.mp3
+Jan 01 18:57 : exception: nested: Failed to open '/Users/anthonygriffon/Music/Non-Album/Imagine Dragons/Thunder.mp3': No such file or directory
+Jan 01 18:57 : player: played "Non-Album/Imagine Dragons/Thunder.mp3"
+Jan 01 18:57 : exception: Failed to decode /Users/anthonygriffon/Music/Non-Album/Lemaitre feat. Jennie Abrahamson/Closer.mp3
+Jan 01 18:57 : exception: nested: Failed to open '/Users/anthonygriffon/Music/Non-Album/Lemaitre feat. Jennie Abrahamson/Closer.mp3': No such file or directory
+Jan 01 18:57 : player: played "Non-Album/Lemaitre feat. Jennie Abrahamson/Closer.mp3"
+Jan 01 18:57 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 01 18:57 : config: option 'auto_resample' on line 33 was not recognized
+Jan 01 18:57 : config: option 'use_mmap' on line 34 was not recognized
+Jan 01 18:57 : client: [0] opened from 127.0.0.1:49881
+Jan 01 18:57 : client: [0] closed
+Jan 01 18:59 : client: [1] opened from 127.0.0.1:49909
+Jan 01 18:59 : client: [1] closed
+Jan 01 19:04 : client: [2] opened from 127.0.0.1:50042
+Jan 01 19:04 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:06 : exception: Failed to open /Users/anthonygriffon/.mpd/playlists: No such file or directory
+Jan 01 19:07 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 19:10 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 19:14 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 19:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 19:14 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Jan 01 19:17 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 19:17 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
