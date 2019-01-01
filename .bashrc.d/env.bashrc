@@ -16,6 +16,14 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Ruby path
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
+# ==================== THEFUCK =======================
+
+eval $(thefuck --alias)
+
+# ==================== HUB =======================
+
+eval "$(hub alias -s)"
+
 # ==================== Fzf =======================
 
 # Ignore node_modules

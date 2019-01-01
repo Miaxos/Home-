@@ -40,11 +40,16 @@ alias gg="git pull"
 alias gp="git push"
 alias gc="git commit"
 
+# With fuzzy search
+alias gkba='git checkout -b $(git branch -a | fzf)'
+alias gb='git checkout $(git branch | fzf)'
+
 alias gaa="git add *"
 alias ga="git add"
-alias gl="git branch -a"
 alias gk="git checkout"
 alias gs="git status"
+
+alias gl="git ls"
 
 ## Alias random mdp
 alias rpwd="openssl rand -base64 32"

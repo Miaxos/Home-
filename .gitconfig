@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Anthony Griffon
+	email = anthony.griffon@iadvize.com
+[core]
+  excludesfile = /Users/anthonygriffon/.gitignore_global
+  whitespace = space-before-tab,indent-with-non-tab,trailing-space
+  ignorecase = false
+	editor = nvim
+[alias]
+  hub =! echo `git config remote.origin.url` | sed -E s/[a-z]+@github\\.com:// | sed s/\\.git$//
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  prb ="!f() { \
+        BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD); \
+        git push -u origin $BRANCH_NAME; \
+        hub pull-request -a miaxos --edit --browse; \
+    };f"
+  showf =! git show $(git --no-pager ls -n 50 | fzf | cut -d' ' -f1)
+  difff =! git diff $(git status --short | fzf | rev | cut -d' ' -f1 | rev)
+[push]
+  default = simple
+  followTags = true
+[rerere]
+  enabled = true
+[rebase]
+	autoStash = true

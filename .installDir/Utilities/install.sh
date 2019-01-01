@@ -10,3 +10,6 @@ brew install fzf ag
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 
+# Install Hub
+brew install git hub
+
