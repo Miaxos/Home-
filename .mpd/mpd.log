@@ -1,0 +1,784 @@
+Dec 30 20:14 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 30 20:14 : config: option 'auto_resample' on line 33 was not recognized
+Dec 30 20:14 : config: option 'use_mmap' on line 34 was not recognized
+Dec 30 20:14 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 30 20:14 : config: option 'auto_resample' on line 33 was not recognized
+Dec 30 20:14 : config: option 'use_mmap' on line 34 was not recognized
+Dec 30 20:17 : client: [0] opened from 127.0.0.1:61981
+Dec 30 20:17 : client: [0] closed
+Dec 30 20:17 : client: [1] opened from 127.0.0.1:61982
+Dec 30 20:18 : client: [1] closed
+Dec 30 20:18 : client: [2] opened from 127.0.0.1:61993
+Dec 30 20:27 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 30 20:27 : config: option 'auto_resample' on line 33 was not recognized
+Dec 30 20:27 : config: option 'use_mmap' on line 34 was not recognized
+Dec 30 20:27 : client: [0] opened from 127.0.0.1:62092
+Dec 30 20:28 : update: added /Trois_Cafés.mp3
+Dec 30 20:28 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:31 : update: added /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.webm
+Dec 30 20:31 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:31 : update: added /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:31 : update: updating /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:31 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:31 : update: updating /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:31 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:31 : update: removing Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.webm
+Dec 30 20:31 : update: updating /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:31 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:31 : update: added /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.temp.mp3
+Dec 30 20:31 : update: removing Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.temp.mp3
+Dec 30 20:31 : update: removing Trois_Cafés.mp3
+Dec 30 20:31 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 20:31 : client: [0] closed
+Dec 30 20:31 : client: [1] opened from 127.0.0.1:62175
+Dec 30 20:32 : player: played "Trois_Cafés.mp3"
+Dec 30 20:32 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 30 20:32 : config: option 'auto_resample' on line 33 was not recognized
+Dec 30 20:32 : config: option 'use_mmap' on line 34 was not recognized
+Dec 30 20:32 : client: [0] opened from 127.0.0.1:62183
+Dec 30 20:32 : update: removing Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:32 : update: added /Trois_Cafés.mp3
+Dec 30 20:32 : client: [0] closed
+Dec 30 20:32 : client: [1] opened from 127.0.0.1:62188
+Dec 30 20:33 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:35 : update: updating /Trois_Cafés.mp3
+Dec 30 20:35 : client: [1] closed
+Dec 30 20:35 : client: [2] opened from 127.0.0.1:62214
+Dec 30 20:35 : update: removing Trois_Cafés.mp3
+Dec 30 20:35 : update: added /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.webm
+Dec 30 20:35 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:35 : update: added /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:35 : update: updating /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:35 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:35 : update: removing Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.webm
+Dec 30 20:35 : update: updating /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:35 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 20:35 : update: added /Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.temp.mp3
+Dec 30 20:35 : update: removing Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.temp.mp3
+Dec 30 20:35 : update: removing Trois Cafés Gourmands - À nos souvenirs [Clip officiel]-voQhp1K2TSk.mp3
+Dec 30 20:35 : update: added /Trois_Café.mp3
+Dec 30 20:36 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 20:36 : player: played "Trois_Cafés.mp3"
+Dec 30 20:38 : client: [2] closed
+Dec 30 20:43 : client: [3] opened from 127.0.0.1:62368
+Dec 30 20:43 : update: removing Trois_Café.mp3
+Dec 30 20:43 : client: [3] closed
+Dec 30 20:43 : update: added Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3
+Dec 30 20:43 : client: [4] opened from 127.0.0.1:62372
+Dec 30 20:44 : exception: Failed to decode /Users/anthonygriffon/Music/Trois_Cafés.mp3
+Dec 30 20:44 : exception: nested: Failed to open '/Users/anthonygriffon/Music/Trois_Cafés.mp3': No such file or directory
+Dec 30 20:44 : player: played "Trois_Cafés.mp3"
+Dec 30 20:44 : client: [4] closed
+Dec 30 20:44 : client: [5] opened from 127.0.0.1:62373
+Dec 30 20:44 : exception: Failed to decode /Users/anthonygriffon/Music/Trois_Cafés.mp3
+Dec 30 20:44 : exception: nested: Failed to open '/Users/anthonygriffon/Music/Trois_Cafés.mp3': No such file or directory
+Dec 30 20:44 : player: played "Trois_Cafés.mp3"
+Dec 30 20:44 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:45 : exception: Failed to decode /Users/anthonygriffon/Music/Trois_Cafés.mp3
+Dec 30 20:45 : exception: nested: Failed to open '/Users/anthonygriffon/Music/Trois_Cafés.mp3': No such file or directory
+Dec 30 20:45 : player: played "Trois_Cafés.mp3"
+Dec 30 20:45 : exception: Failed to decode /Users/anthonygriffon/Music/Trois_Cafés.mp3
+Dec 30 20:45 : exception: nested: Failed to open '/Users/anthonygriffon/Music/Trois_Cafés.mp3': No such file or directory
+Dec 30 20:45 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:45 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:46 : player: played "Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3"
+Dec 30 20:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:47 : client: [5] closed
+Dec 30 20:49 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 20:49 : player: played "Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3"
+Dec 30 20:49 : client: [6] opened from 127.0.0.1:62432
+Dec 30 20:50 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 20:51 : client: [6] closed
+Dec 30 20:51 : client: [7] opened from 127.0.0.1:62438
+Dec 30 20:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 20:53 : player: played "Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3"
+Dec 30 21:00 : client: [8] opened from 127.0.0.1:62525
+Dec 30 21:00 : client: [8] closed
+Dec 30 21:00 : update: added Non-Album/Maître Gims/Le Pire.mp3
+Dec 30 21:00 : client: [7] closed
+Dec 30 21:00 : client: [9] opened from 127.0.0.1:62526
+Dec 30 21:00 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:01 : client: [9] closed
+Dec 30 21:01 : client: [10] opened from 127.0.0.1:62554
+Dec 30 21:04 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 21:04 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 30 21:04 : client: [11] opened from 127.0.0.1:62603
+Dec 30 21:04 : client: [11] closed
+Dec 30 21:04 : update: added Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3
+Dec 30 21:04 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:05 : client: [12] opened from 127.0.0.1:62617
+Dec 30 21:05 : client: [12] closed
+Dec 30 21:05 : update: added Non-Album/Therapie TAXI/Cri des loups.mp3
+Dec 30 21:07 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 21:07 : client: [13] opened from 127.0.0.1:62778
+Dec 30 21:07 : client: [13] closed
+Dec 30 21:07 : update: added OrelSan/La fête est finie/10 Zone feat. Nekfeu & Dizzee Rascal.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/06 La lumière.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/12 La pluie feat. Stromae.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/02 La fête est finie.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/01 San.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/04 Tout va bien.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/07 Bonne meuf.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/13 Paradis.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/11 Dans ma ville, on traîne.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/09 Christophe feat. Maître Gims.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/14 Notes pour trop tard feat. Ibeyi.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/08 Quand est-ce que ça s'arrête.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/03 Basique.mp3
+Dec 30 21:07 : update: added OrelSan/La fête est finie/05 Défaite de famille.mp3
+Dec 30 21:08 : player: played "Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3"
+Dec 30 21:08 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:08 : player: played "OrelSan/La fête est finie/01 San.mp3"
+Dec 30 21:09 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:09 : client: [10] closed
+Dec 30 21:09 : client: [14] opened from 127.0.0.1:62786
+Dec 30 21:09 : client: [14] closed
+Dec 30 21:09 : client: [15] opened from 127.0.0.1:62787
+Dec 30 21:10 : client: [15] closed
+Dec 30 21:10 : client: [16] opened from 127.0.0.1:62795
+Dec 30 21:10 : client: [16] closed
+Dec 30 21:10 : client: [17] opened from 127.0.0.1:62797
+Dec 30 21:10 : client: [17] closed
+Dec 30 21:11 : client: [18] opened from 127.0.0.1:62801
+Dec 30 21:12 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:13 : player: played "OrelSan/La fête est finie/01 San.mp3"
+Dec 30 21:14 : client: [19] opened from 127.0.0.1:62881
+Dec 30 21:14 : client: [19] closed
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157971.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/12 Ego.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156695.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/10 Honey.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157999.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/02 Random.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157831.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/05 Beaulieue.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157214.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/09 Normal.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156701.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/06 Quartier des lunes.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 158274.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/03 Rue de Moscou.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155365.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/08 Kid.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156777.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/15 Musique Basse.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 79826.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/14 Fête de trop.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156276.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/04 Jimmy.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 80600.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/07 Desmurs.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 74807.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/01 Début.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157414.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/11 Genre.mp3
+Dec 30 21:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155924.
+Dec 30 21:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:14 : update: added Eddy de Pretto/Cure/13 Mamere.mp3
+Dec 30 21:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:15 : player: played "OrelSan/La fête est finie/12 La pluie feat. Stromae.mp3"
+Dec 30 21:17 : client: [20] opened from 127.0.0.1:62917
+Dec 30 21:17 : client: [20] closed
+Dec 30 21:17 : update: added Non-Album/Angèle/La Loi de Murphy.mp3
+Dec 30 21:17 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:17 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:20 : client: [21] opened from 127.0.0.1:62950
+Dec 30 21:20 : client: [21] closed
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/16 Elle viendra quand même.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/04 Mauvaise idée.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/02 Le Chant des sirènes.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/07 Si seul.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/03 Plus rien ne m'étonne.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/01 Raelsan.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/13 La Morale.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/06 Finir mal.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/15 Suicide social.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/08 Des trous dans la tête.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/05 Double vie.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/09 La Petite Marchande de porte-clefs.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/10 La Terre est ronde.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/14 Ils sont cools feat. Gringe.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/11 1990.mp3
+Dec 30 21:20 : update: added OrelSan/Le Chant des sirènes/12 2010.mp3
+Dec 30 21:22 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:22 : player: played "OrelSan/La fête est finie/11 Dans ma ville, on traîne.mp3"
+Dec 30 21:22 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:22 : client: [22] opened from 127.0.0.1:62998
+Dec 30 21:22 : client: [22] closed
+Dec 30 21:22 : update: added Non-Album/Ed Sheeran/Castle on the Hill.mp3
+Dec 30 21:23 : client: [23] opened from 127.0.0.1:63016
+Dec 30 21:23 : client: [23] closed
+Dec 30 21:23 : update: added Non-Album/P!nk/Just Give Me a Reason.mp3
+Dec 30 21:25 : client: [24] opened from 127.0.0.1:63055
+Dec 30 21:25 : client: [24] closed
+Dec 30 21:25 : update: added Non-Album/Ed Sheeran/Shape of You.mp3
+Dec 30 21:25 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:28 : client: [25] opened from 127.0.0.1:63082
+Dec 30 21:28 : client: [25] closed
+Dec 30 21:28 : update: added Non-Album/Slimane/Noux deux.mp3
+Dec 30 21:29 : client: [26] opened from 127.0.0.1:63097
+Dec 30 21:29 : client: [26] closed
+Dec 30 21:29 : update: added Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3
+Dec 30 21:30 : client: [27] opened from 127.0.0.1:63120
+Dec 30 21:30 : client: [27] closed
+Dec 30 21:30 : update: added Non-Album/Les Fatals Picards/Le Retour à la terre.mp3
+Dec 30 21:32 : client: [18] closed
+Dec 30 21:32 : client: [28] opened from 127.0.0.1:63124
+Dec 30 21:33 : client: [29] opened from 127.0.0.1:63145
+Dec 30 21:33 : client: [29] closed
+Dec 30 21:33 : update: added Non-Album/Vald/Deviens génial.mp3
+Dec 30 21:34 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 21:34 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:35 : player: played "Non-Album/Ed Sheeran/Castle on the Hill.mp3"
+Dec 30 21:38 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155924.
+Dec 30 21:38 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:38 : player: played "OrelSan/La fête est finie/06 La lumière.mp3"
+Dec 30 21:41 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:41 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:43 : client: [28] closed
+Dec 30 21:43 : client: [30] opened from 127.0.0.1:63255
+Dec 30 21:44 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 21:44 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155365.
+Dec 30 21:44 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:45 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Dec 30 21:48 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:48 : player: played "Eddy de Pretto/Cure/08 Kid.mp3"
+Dec 30 21:48 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:54 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 21:54 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156276.
+Dec 30 21:54 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 21:54 : player: played "OrelSan/Le Chant des sirènes/02 Le Chant des sirènes.mp3"
+Dec 30 21:57 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 21:57 : player: played "Eddy de Pretto/Cure/04 Jimmy.mp3"
+Dec 30 22:00 : ffmpeg/mp3: Skipping 1035 bytes of junk at 158274.
+Dec 30 22:00 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 22:00 : player: played "OrelSan/La fête est finie/12 La pluie feat. Stromae.mp3"
+Dec 30 22:00 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:01 : client: [30] closed
+Dec 30 22:01 : client: [31] opened from 127.0.0.1:63377
+Dec 30 22:04 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 22:04 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:05 : player: played "Non-Album/Ed Sheeran/Shape of You.mp3"
+Dec 30 22:09 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 22:09 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:09 : player: played "Non-Album/Vald/Deviens génial.mp3"
+Dec 30 22:12 : ffmpeg/mp3float: Header missing
+Dec 30 22:12 : ffmpeg: avcodec_send_packet() failed: Invalid data found when processing input
+Dec 30 22:12 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:12 : player: played "OrelSan/La fête est finie/02 La fête est finie.mp3"
+Dec 30 22:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:14 : player: played "OrelSan/La fête est finie/07 Bonne meuf.mp3"
+Dec 30 22:18 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 22:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:18 : player: played "Non-Album/Les Fatals Picards/Le Retour à la terre.mp3"
+Dec 30 22:26 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157999.
+Dec 30 22:26 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 22:26 : player: played "OrelSan/La fête est finie/14 Notes pour trop tard feat. Ibeyi.mp3"
+Dec 30 22:30 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156701.
+Dec 30 22:30 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 22:30 : player: played "Eddy de Pretto/Cure/02 Random.mp3"
+Dec 30 22:33 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157214.
+Dec 30 22:33 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 22:34 : player: played "Eddy de Pretto/Cure/06 Quartier des lunes.mp3"
+Dec 30 22:37 : ffmpeg/mp3float: Header missing
+Dec 30 22:37 : ffmpeg: avcodec_send_packet() failed: Invalid data found when processing input
+Dec 30 22:37 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156695.
+Dec 30 22:37 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 22:37 : player: played "Eddy de Pretto/Cure/09 Normal.mp3"
+Dec 30 22:41 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:41 : player: played "Eddy de Pretto/Cure/10 Honey.mp3"
+Dec 30 22:44 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 22:44 : player: played "OrelSan/La fête est finie/09 Christophe feat. Maître Gims.mp3"
+Dec 30 22:47 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 22:47 : player: played "Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3"
+Dec 30 22:58 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:02 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:02 : player: played "OrelSan/La fête est finie/13 Paradis.mp3"
+Dec 30 23:05 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:05 : player: played "OrelSan/La fête est finie/04 Tout va bien.mp3"
+Dec 30 23:08 : ffmpeg/mp3float: Header missing
+Dec 30 23:08 : ffmpeg: avcodec_send_packet() failed: Invalid data found when processing input
+Dec 30 23:08 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157214.
+Dec 30 23:08 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 23:08 : player: played "OrelSan/La fête est finie/02 La fête est finie.mp3"
+Dec 30 23:09 : client: [31] closed
+Dec 30 23:10 : client: [32] opened from 127.0.0.1:52135
+Dec 30 23:11 : ffmpeg/mp3float: Header missing
+Dec 30 23:11 : ffmpeg: avcodec_send_packet() failed: Invalid data found when processing input
+Dec 30 23:11 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:12 : player: played "Eddy de Pretto/Cure/09 Normal.mp3"
+Dec 30 23:15 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 23:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:16 : player: played "Non-Album/Les Fatals Picards/Le Retour à la terre.mp3"
+Dec 30 23:20 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:20 : player: played "OrelSan/La fête est finie/11 Dans ma ville, on traîne.mp3"
+Dec 30 23:24 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157414.
+Dec 30 23:24 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 23:24 : player: played "OrelSan/La fête est finie/01 San.mp3"
+Dec 30 23:28 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156777.
+Dec 30 23:28 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 23:29 : player: played "Eddy de Pretto/Cure/11 Genre.mp3"
+Dec 30 23:32 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:33 : player: played "Eddy de Pretto/Cure/15 Musique Basse.mp3"
+Dec 30 23:36 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 23:36 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157831.
+Dec 30 23:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 30 23:36 : player: played "Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3"
+Dec 30 23:40 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:40 : player: played "Eddy de Pretto/Cure/05 Beaulieue.mp3"
+Dec 30 23:44 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:45 : player: played "OrelSan/La fête est finie/10 Zone feat. Nekfeu & Dizzee Rascal.mp3"
+Dec 30 23:49 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 23:49 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:49 : player: played "Non-Album/Vald/Deviens génial.mp3"
+Dec 30 23:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 23:53 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:53 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 30 23:56 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 30 23:56 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 30 23:56 : player: played "Non-Album/Slimane/Noux deux.mp3"
+Dec 30 23:56 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 00:00 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 00:00 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 00:00 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Dec 31 01:58 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:01 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 02:01 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156701.
+Dec 31 02:01 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:02 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 02:03 : client: [32] closed
+Dec 31 02:05 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:06 : player: played "Eddy de Pretto/Cure/06 Quartier des lunes.mp3"
+Dec 31 02:09 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:09 : player: played "OrelSan/La fête est finie/06 La lumière.mp3"
+Dec 31 02:10 : client: [33] opened from 127.0.0.1:55251
+Dec 31 02:13 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157999.
+Dec 31 02:13 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:13 : player: played "OrelSan/La fête est finie/05 Défaite de famille.mp3"
+Dec 31 02:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:18 : player: played "Eddy de Pretto/Cure/02 Random.mp3"
+Dec 31 02:26 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155365.
+Dec 31 02:26 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:26 : player: played "OrelSan/La fête est finie/14 Notes pour trop tard feat. Ibeyi.mp3"
+Dec 31 02:29 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:29 : player: played "Eddy de Pretto/Cure/08 Kid.mp3"
+Dec 31 02:32 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156695.
+Dec 31 02:32 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:32 : player: played "OrelSan/La fête est finie/09 Christophe feat. Maître Gims.mp3"
+Dec 31 02:36 : client: [33] closed
+Dec 31 02:36 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156276.
+Dec 31 02:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:36 : player: played "Eddy de Pretto/Cure/10 Honey.mp3"
+Dec 31 02:40 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:40 : player: played "Eddy de Pretto/Cure/04 Jimmy.mp3"
+Dec 31 02:43 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 02:43 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155924.
+Dec 31 02:43 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:44 : player: played "Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3"
+Dec 31 02:47 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 02:47 : player: played "Eddy de Pretto/Cure/13 Mamere.mp3"
+Dec 31 02:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 02:53 : ffmpeg/mp3: Skipping 1035 bytes of junk at 79826.
+Dec 31 02:53 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:54 : player: played "OrelSan/Le Chant des sirènes/02 Le Chant des sirènes.mp3"
+Dec 31 02:56 : ffmpeg/mp3: Skipping 1035 bytes of junk at 158274.
+Dec 31 02:56 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 02:56 : player: played "Eddy de Pretto/Cure/14 Fête de trop.mp3"
+Dec 31 03:01 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:01 : player: played "Eddy de Pretto/Cure/03 Rue de Moscou.mp3"
+Dec 31 03:03 : client: [34] opened from 127.0.0.1:56637
+Dec 31 03:04 : ffmpeg/mp3: Skipping 1035 bytes of junk at 80600.
+Dec 31 03:04 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 03:04 : player: played "Non-Album/Angèle/La Loi de Murphy.mp3"
+Dec 31 03:07 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:07 : player: played "Eddy de Pretto/Cure/07 Desmurs.mp3"
+Dec 31 03:10 : ffmpeg/mp3: Skipping 1035 bytes of junk at 74807.
+Dec 31 03:10 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 03:10 : player: played "OrelSan/La fête est finie/08 Quand est-ce que ça s'arrête.mp3"
+Dec 31 03:11 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:11 : player: played "Eddy de Pretto/Cure/01 Début.mp3"
+Dec 31 03:13 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:13 : player: played "OrelSan/La fête est finie/07 Bonne meuf.mp3"
+Dec 31 03:16 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:16 : player: played "OrelSan/La fête est finie/12 La pluie feat. Stromae.mp3"
+Dec 31 03:19 : player: played "OrelSan/La fête est finie/03 Basique.mp3"
+Dec 31 03:23 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:23 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:23 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:23 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:27 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 03:27 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Dec 31 03:27 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:27 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:28 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:28 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:28 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:30 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 03:30 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:30 : player: played "Non-Album/Slimane/Noux deux.mp3"
+Dec 31 03:33 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:33 : player: played "OrelSan/La fête est finie/03 Basique.mp3"
+Dec 31 03:37 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 03:37 : ffmpeg/mp3: Skipping 1035 bytes of junk at 79826.
+Dec 31 03:37 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 03:38 : player: played "Non-Album/Ed Sheeran/Shape of You.mp3"
+Dec 31 03:40 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:40 : player: played "Eddy de Pretto/Cure/14 Fête de trop.mp3"
+Dec 31 03:43 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:43 : player: played "OrelSan/La fête est finie/12 La pluie feat. Stromae.mp3"
+Dec 31 03:47 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 03:47 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:47 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 03:49 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:49 : exception: No such directory
+Dec 31 03:49 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:49 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 03:53 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 03:53 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 03:56 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156276.
+Dec 31 03:56 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 03:56 : player: played "OrelSan/La fête est finie/06 La lumière.mp3"
+Dec 31 04:00 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157414.
+Dec 31 04:00 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 04:00 : player: played "Eddy de Pretto/Cure/04 Jimmy.mp3"
+Dec 31 04:04 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:04 : player: played "Eddy de Pretto/Cure/11 Genre.mp3"
+Dec 31 04:08 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 04:08 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:08 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 04:10 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:10 : player: played "OrelSan/La fête est finie/04 Tout va bien.mp3"
+Dec 31 04:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155365.
+Dec 31 04:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 04:14 : player: played "OrelSan/La fête est finie/01 San.mp3"
+Dec 31 04:17 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157214.
+Dec 31 04:17 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 04:17 : player: played "Eddy de Pretto/Cure/08 Kid.mp3"
+Dec 31 04:21 : ffmpeg/mp3float: Header missing
+Dec 31 04:21 : ffmpeg: avcodec_send_packet() failed: Invalid data found when processing input
+Dec 31 04:21 : ffmpeg/mp3: Skipping 1035 bytes of junk at 74807.
+Dec 31 04:21 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 04:21 : player: played "Eddy de Pretto/Cure/09 Normal.mp3"
+Dec 31 04:22 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:22 : player: played "Eddy de Pretto/Cure/01 Début.mp3"
+Dec 31 04:27 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:33 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 04:33 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:33 : player: played "OrelSan/Le Chant des sirènes/15 Suicide social.mp3"
+Dec 31 04:33 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:42 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 04:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:45 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 04:45 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:45 : player: played "Non-Album/Slimane/Noux deux.mp3"
+Dec 31 04:45 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:49 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 04:49 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156701.
+Dec 31 04:49 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 04:49 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 04:50 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 04:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 04:53 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157999.
+Dec 31 04:53 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 04:54 : player: played "Non-Album/P!nk/Just Give Me a Reason.mp3"
+Dec 31 14:02 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:06 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 14:06 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155924.
+Dec 31 14:06 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 14:06 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 14:08 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:13 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:16 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 14:16 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:16 : player: played "Non-Album/Slimane/Noux deux.mp3"
+Dec 31 14:19 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:23 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 14:23 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:23 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Dec 31 14:24 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:24 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:24 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:29 : client: [35] opened from 127.0.0.1:61500
+Dec 31 14:29 : client: [35] closed
+Dec 31 14:29 : update: added Non-Album/Avicii/Waiting for Love.mp3
+Dec 31 14:29 : client: [36] opened from 127.0.0.1:61505
+Dec 31 14:29 : client: [36] closed
+Dec 31 14:29 : update: added Meg & Dia/00 Monster (DotEXE Remix).mp3
+Dec 31 14:30 : update: updating Meg & Dia/00 Monster (DotEXE Remix).mp3
+Dec 31 14:31 : client: [37] opened from 127.0.0.1:61525
+Dec 31 14:31 : client: [37] closed
+Dec 31 14:31 : update: added Non-Album/Maroon 5/Girls Like You.mp3
+Dec 31 14:32 : client: [38] opened from 127.0.0.1:61542
+Dec 31 14:32 : client: [38] closed
+Dec 31 14:32 : update: added Non-Album/Coldplay/Something Just Like This.mp3
+Dec 31 14:32 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:36 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 14:36 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:36 : player: played "Non-Album/Coldplay/Something Just Like This.mp3"
+Dec 31 14:39 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 14:40 : player: played "Non-Album/Angèle/La Loi de Murphy.mp3"
+Dec 31 14:47 : client: [39] opened from 127.0.0.1:61756
+Dec 31 14:47 : client: [39] closed
+Dec 31 14:47 : update: added Non-Album/OneRepublic/Counting Stars.mp3
+Dec 31 14:55 : client: [40] opened from 127.0.0.1:61859
+Dec 31 14:55 : client: [40] closed
+Dec 31 14:55 : update: added Non-Album/Ed Sheeran/Perfect.mp3
+Dec 31 14:55 : client: [41] opened from 127.0.0.1:61863
+Dec 31 14:55 : client: [41] closed
+Dec 31 14:55 : update: added Non-Album/Passenger/Let Her Go.mp3
+Dec 31 15:01 : client: [42] opened from 127.0.0.1:61958
+Dec 31 15:01 : client: [42] closed
+Dec 31 15:01 : update: added Non-Album/Ed Sheeran/Thinking Out Loud.mp3
+Dec 31 15:04 : client: [43] opened from 127.0.0.1:62006
+Dec 31 15:04 : client: [43] closed
+Dec 31 15:04 : update: added Non-Album/Ed Sheeran/Photograph.mp3
+Dec 31 15:16 : client: [44] opened from 127.0.0.1:62174
+Dec 31 15:16 : client: [44] closed
+Dec 31 15:16 : update: added Non-Album/Lomepal/Trop beau.mp3
+Dec 31 15:16 : update: added Non-Album/Lemaitre feat. Jennie Abrahamson/Closer.mp3
+Dec 31 15:16 : update: added Non-Album/Coldplay/Hymn for the Weekend.mp3
+Dec 31 15:16 : update: added Non-Album/Simply Three/Wake Me Up.mp3
+Dec 31 15:16 : update: added Non-Album/Dynoro & Gigi D’Agostino/In My Mind.mp3
+Dec 31 15:16 : update: added Non-Album/Naâman/Outta Road.mp3
+Dec 31 15:16 : update: added Non-Album/Alan Walker/Alone.mp3
+Dec 31 15:16 : update: added Non-Album/2CELLOS/Pirates of the Caribbean.mp3
+Dec 31 15:16 : client: [45] opened from 127.0.0.1:62179
+Dec 31 15:16 : client: [45] closed
+Dec 31 15:16 : update: added Non-Album/The Police/Every Breath You Take.mp3
+Dec 31 15:46 : client: [46] opened from 127.0.0.1:62501
+Dec 31 15:46 : client: [46] closed
+Dec 31 15:46 : update: added Non-Album/Flume/Drop the Game.mp3
+Dec 31 15:46 : update: added Non-Album/The Chainsmokers feat. ROZES/Don’t Let Me Down.mp3
+Dec 31 15:46 : update: added Non-Album/Rag’n’Bone Man/Human.mp3
+Dec 31 15:46 : update: added Non-Album/Electric Press Kit/Bullet in My Head.mp3
+Dec 31 15:46 : update: added Non-Album/twenty one pilots/Heathens (DISTO remix).mp3
+Dec 31 15:46 : update: added Non-Album/Alan Walker feat. K-391/Ignite (instrumental).mp3
+Dec 31 15:46 : update: added Non-Album/Imagine Dragons/Thunder.mp3
+Dec 31 15:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 15:50 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 15:50 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 15:50 : player: played "Non-Album/Naâman/Outta Road.mp3"
+Dec 31 15:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 15:53 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 15:53 : player: played "Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3"
+Dec 31 16:36 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157831.
+Dec 31 16:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 16:36 : ffmpeg/mp3: Skipping 1035 bytes of junk at 80600.
+Dec 31 16:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 16:36 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156777.
+Dec 31 16:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 16:36 : player: played "Eddy de Pretto/Cure/15 Musique Basse.mp3"
+Dec 31 16:36 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:36 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:39 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:41 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 16:41 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:41 : player: played "Non-Album/Slimane/Noux deux.mp3"
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:42 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:46 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 16:46 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155924.
+Dec 31 16:46 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 16:46 : player: played "Non-Album/Imagine Dragons/Thunder.mp3"
+Dec 31 16:49 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:49 : player: played "Eddy de Pretto/Cure/13 Mamere.mp3"
+Dec 31 16:54 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 16:54 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:54 : player: played "Non-Album/OneRepublic/Counting Stars.mp3"
+Dec 31 16:58 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 16:58 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 16:58 : player: played "Non-Album/Ed Sheeran/Castle on the Hill.mp3"
+Dec 31 17:03 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 17:03 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 17:03 : player: played "Non-Album/Vald/Deviens génial.mp3"
+Dec 31 17:06 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 17:06 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156695.
+Dec 31 17:06 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 17:06 : player: played "Non-Album/Electric Press Kit/Bullet in My Head.mp3"
+Dec 31 17:10 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 17:10 : player: played "Eddy de Pretto/Cure/10 Honey.mp3"
+Dec 31 17:14 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 17:14 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157414.
+Dec 31 17:14 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 17:14 : player: played "Non-Album/Coldplay/Hymn for the Weekend.mp3"
+Dec 31 18:12 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:16 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:16 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:16 : player: played "Non-Album/Maroon 5/Girls Like You.mp3"
+Dec 31 18:20 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:20 : ffmpeg/mp3: Skipping 1035 bytes of junk at 79826.
+Dec 31 18:20 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 18:20 : player: played "Non-Album/Coldplay/Something Just Like This.mp3"
+Dec 31 18:23 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:23 : player: played "Eddy de Pretto/Cure/14 Fête de trop.mp3"
+Dec 31 18:26 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:26 : ffmpeg/mp3: Skipping 1035 bytes of junk at 74807.
+Dec 31 18:26 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 18:26 : player: played "Non-Album/The Chainsmokers feat. ROZES/Don’t Let Me Down.mp3"
+Dec 31 18:27 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:27 : player: played "Eddy de Pretto/Cure/01 Début.mp3"
+Dec 31 18:31 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:31 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:32 : player: played "Non-Album/Ed Sheeran/Photograph.mp3"
+Dec 31 18:35 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:35 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:35 : player: played "Non-Album/twenty one pilots/Heathens (DISTO remix).mp3"
+Dec 31 18:39 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:39 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156276.
+Dec 31 18:39 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 18:39 : player: played "Non-Album/Flume/Drop the Game.mp3"
+Dec 31 18:43 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156701.
+Dec 31 18:43 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Dec 31 18:43 : player: played "Eddy de Pretto/Cure/04 Jimmy.mp3"
+Dec 31 18:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:46 : player: played "Eddy de Pretto/Cure/06 Quartier des lunes.mp3"
+Dec 31 18:50 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:50 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:50 : player: played "Non-Album/P!nk/Just Give Me a Reason.mp3"
+Dec 31 18:54 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:54 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:54 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 18:59 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 18:59 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 18:59 : player: played "Non-Album/Ed Sheeran/Perfect.mp3"
+Dec 31 19:03 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 19:03 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:03 : player: played "Non-Album/Therapie TAXI/Cri des loups.mp3"
+Dec 31 19:06 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:06 : player: played "Non-Album/Angèle/La Loi de Murphy.mp3"
+Dec 31 19:06 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:07 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:10 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 19:10 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:11 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
+Dec 31 19:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:18 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 19:18 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 31 19:18 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Dec 31 19:21 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Dec 31 19:21 : player: played "Non-Album/twenty one pilots/Heathens (DISTO remix).mp3"
+Jan 01 17:01 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:05 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:05 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:05 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Jan 01 17:08 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:08 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:08 : player: played "Non-Album/2CELLOS/Pirates of the Caribbean.mp3"
+Jan 01 17:10 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:10 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:11 : player: played "Non-Album/Alan Walker/Alone.mp3"
+Jan 01 17:14 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:14 : player: played "Non-Album/Alan Walker feat. K-391/Ignite (instrumental).mp3"
+Jan 01 17:17 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:18 : player: played "Non-Album/Angèle/La Loi de Murphy.mp3"
+Jan 01 17:21 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:21 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:21 : player: played "Non-Album/Avicii/Waiting for Love.mp3"
+Jan 01 17:25 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:25 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:25 : player: played "Non-Album/The Chainsmokers feat. ROZES/Don’t Let Me Down.mp3"
+Jan 01 17:29 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:29 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:29 : player: played "Non-Album/Coldplay/Hymn for the Weekend.mp3"
+Jan 01 17:33 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:33 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:33 : player: played "Non-Album/Coldplay/Something Just Like This.mp3"
+Jan 01 17:36 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:36 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:36 : player: played "Non-Album/Dynoro & Gigi D’Agostino/In My Mind.mp3"
+Jan 01 17:41 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:41 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:41 : player: played "Non-Album/Ed Sheeran/Thinking Out Loud.mp3"
+Jan 01 17:46 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:46 : player: played "Non-Album/Ed Sheeran/Photograph.mp3"
+Jan 01 17:50 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:50 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 17:50 : player: played "Non-Album/Ed Sheeran/Castle on the Hill.mp3"
+Jan 01 17:55 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 17:55 : ffmpeg/mp3: Skipping 1035 bytes of junk at 74807.
+Jan 01 17:55 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 17:55 : player: played "Non-Album/Ed Sheeran/Perfect.mp3"
+Jan 01 17:55 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157999.
+Jan 01 17:55 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 17:55 : player: played "Eddy de Pretto/Cure/01 Début.mp3"
+Jan 01 17:59 : ffmpeg/mp3: Skipping 1035 bytes of junk at 158274.
+Jan 01 17:59 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 17:59 : player: played "Eddy de Pretto/Cure/02 Random.mp3"
+Jan 01 18:04 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156276.
+Jan 01 18:04 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:04 : player: played "Eddy de Pretto/Cure/03 Rue de Moscou.mp3"
+Jan 01 18:07 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157831.
+Jan 01 18:07 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:07 : player: played "Eddy de Pretto/Cure/04 Jimmy.mp3"
+Jan 01 18:11 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156701.
+Jan 01 18:11 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:11 : player: played "Eddy de Pretto/Cure/05 Beaulieue.mp3"
+Jan 01 18:15 : ffmpeg/mp3: Skipping 1035 bytes of junk at 80600.
+Jan 01 18:15 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:15 : player: played "Eddy de Pretto/Cure/06 Quartier des lunes.mp3"
+Jan 01 18:18 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155365.
+Jan 01 18:18 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:18 : player: played "Eddy de Pretto/Cure/07 Desmurs.mp3"
+Jan 01 18:21 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157214.
+Jan 01 18:21 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:21 : player: played "Eddy de Pretto/Cure/08 Kid.mp3"
+Jan 01 18:25 : ffmpeg/mp3float: Header missing
+Jan 01 18:25 : ffmpeg: avcodec_send_packet() failed: Invalid data found when processing input
+Jan 01 18:25 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156695.
+Jan 01 18:25 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:25 : player: played "Eddy de Pretto/Cure/09 Normal.mp3"
+Jan 01 18:28 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157414.
+Jan 01 18:28 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:28 : player: played "Eddy de Pretto/Cure/10 Honey.mp3"
+Jan 01 18:32 : ffmpeg/mp3: Skipping 1035 bytes of junk at 157971.
+Jan 01 18:32 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:32 : player: played "Eddy de Pretto/Cure/11 Genre.mp3"
+Jan 01 18:36 : ffmpeg/mp3: Skipping 1035 bytes of junk at 155924.
+Jan 01 18:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:36 : player: played "Eddy de Pretto/Cure/12 Ego.mp3"
+Jan 01 18:40 : ffmpeg/mp3: Skipping 1035 bytes of junk at 79826.
+Jan 01 18:40 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:40 : player: played "Eddy de Pretto/Cure/13 Mamere.mp3"
+Jan 01 18:42 : ffmpeg/mp3: Skipping 1035 bytes of junk at 156777.
+Jan 01 18:42 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Jan 01 18:42 : player: played "Eddy de Pretto/Cure/14 Fête de trop.mp3"
+Jan 01 18:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 18:46 : player: played "Eddy de Pretto/Cure/15 Musique Basse.mp3"
+Jan 01 18:49 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 18:49 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 18:49 : player: played "Non-Album/Electric Press Kit/Bullet in My Head.mp3"
+Jan 01 18:53 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 01 18:53 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 01 18:54 : player: played "Non-Album/Flume/Drop the Game.mp3"

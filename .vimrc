@@ -12,9 +12,6 @@
 set nocompatible
 filetype off                  " required
 
-" Leeader
-let mapleader = 'ù'
-
 " ================ General Config ====================
 
 set number                      "Line numbers are good
@@ -26,6 +23,9 @@ set autoread                    "Reload files changed outside vim
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 syntax on
+
+" Leader
+let mapleader = 'ù'
 
 
 " =============== Vundle Initialization ===============
@@ -54,6 +54,8 @@ Plugin 'haya14busa/incsearch.vim'
 " ## Fuzzy Find
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
+" ## Cursors
+Plugin 'terryma/vim-multiple-cursors'
 
 " Plugin 'kien/ctrlp.vim'
 " Plugin 'jelera/vim-javascript-syntax'
@@ -64,7 +66,6 @@ Plugin 'junegunn/fzf.vim'
 "" Plugin 'Yggdroot/indentLine'
 " Plugin 'hail2u/vim-css3-syntax'
 " Plugin 'tpope/vim-commentary'
-" Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'Yggdroot/indentLine'
 " Plugin 'Vimjas/vim-python-pep8-indent'
 " Plugin 'w0rp/ale'

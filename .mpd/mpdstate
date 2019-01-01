@@ -1,0 +1,67 @@
+sw_volume: 100
+audio_device_state:1:CoreAudio
+audio_device_state:1:my_fifo
+state: play
+current: 32
+time: 131.429000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Non-Album/Slimane/Noux deux.mp3
+1:Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3
+2:Non-Album/2CELLOS/Pirates of the Caribbean.mp3
+3:Non-Album/Alan Walker/Alone.mp3
+4:Non-Album/Alan Walker feat. K-391/Ignite (instrumental).mp3
+5:Non-Album/Angèle/La Loi de Murphy.mp3
+6:Non-Album/Avicii/Waiting for Love.mp3
+7:Non-Album/The Chainsmokers feat. ROZES/Don’t Let Me Down.mp3
+8:Non-Album/Coldplay/Hymn for the Weekend.mp3
+9:Non-Album/Coldplay/Something Just Like This.mp3
+10:Non-Album/Dynoro & Gigi D’Agostino/In My Mind.mp3
+11:Non-Album/Ed Sheeran/Thinking Out Loud.mp3
+12:Non-Album/Ed Sheeran/Photograph.mp3
+13:Non-Album/Ed Sheeran/Castle on the Hill.mp3
+14:Non-Album/Ed Sheeran/Perfect.mp3
+15:Eddy de Pretto/Cure/01 Début.mp3
+16:Eddy de Pretto/Cure/02 Random.mp3
+17:Eddy de Pretto/Cure/03 Rue de Moscou.mp3
+18:Eddy de Pretto/Cure/04 Jimmy.mp3
+19:Eddy de Pretto/Cure/05 Beaulieue.mp3
+20:Eddy de Pretto/Cure/06 Quartier des lunes.mp3
+21:Eddy de Pretto/Cure/07 Desmurs.mp3
+22:Eddy de Pretto/Cure/08 Kid.mp3
+23:Eddy de Pretto/Cure/09 Normal.mp3
+24:Eddy de Pretto/Cure/10 Honey.mp3
+25:Eddy de Pretto/Cure/11 Genre.mp3
+26:Eddy de Pretto/Cure/12 Ego.mp3
+27:Eddy de Pretto/Cure/13 Mamere.mp3
+28:Eddy de Pretto/Cure/14 Fête de trop.mp3
+29:Eddy de Pretto/Cure/15 Musique Basse.mp3
+30:Non-Album/Electric Press Kit/Bullet in My Head.mp3
+31:Non-Album/Flume/Drop the Game.mp3
+32:Non-Album/Imagine Dragons/Thunder.mp3
+33:Non-Album/Lemaitre feat. Jennie Abrahamson/Closer.mp3
+34:Non-Album/Les Fatals Picards/Le Retour à la terre.mp3
+35:Non-Album/Lomepal/Trop beau.mp3
+36:Non-Album/Maroon 5/Girls Like You.mp3
+37:Non-Album/Maître Gims/Le Pire.mp3
+38:Meg & Dia/00 Monster (DotEXE Remix).mp3
+39:Non-Album/Naâman/Outta Road.mp3
+40:Non-Album/OneRepublic/Counting Stars.mp3
+41:Non-Album/P!nk/Just Give Me a Reason.mp3
+42:Non-Album/Passenger/Let Her Go.mp3
+43:Non-Album/The Police/Every Breath You Take.mp3
+44:Non-Album/Simply Three/Wake Me Up.mp3
+45:Non-Album/Slimane/Noux deux.mp3
+46:Non-Album/Therapie TAXI/Cri des loups.mp3
+47:Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3
+48:Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3
+49:Non-Album/Vald/Deviens génial.mp3
+50:Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3
+51:Non-Album/twenty one pilots/Heathens (DISTO remix).mp3
+playlist_end
