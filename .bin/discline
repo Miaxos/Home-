@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# This is a script to easily launch discline
+# from an application launcher or similar.
+#
+# http://github.com/mitchweaver/Discline
+#
+
+DISCLINE_DIR="${HOME}/.localApps/Discline"
+PYTHON_VERSION='3.5'
+
+# ------------------------------------------------------- 
+cd $DISCLINE_DIR/
+~/.pyenv/versions/3.5.0/bin/python$PYTHON_VERSION Discline.py
