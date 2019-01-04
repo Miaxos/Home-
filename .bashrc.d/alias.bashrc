@@ -99,3 +99,9 @@ alias f='open -a Finder ./'
 # Remove old docker images
 alias drmae='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
 
+#webserver
+alias webserver="http-server . --ssl --color --cert='/Users/anthonygriffon/.certs/crt.txt' --key='/Users/anthonygriffon/.certs/key.txt' -p "
+
+# Rg fuzzy find
+alias rgf="rg --column --line-number --hidden --ignore-case --no-heading --color=always "
+

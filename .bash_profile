@@ -24,6 +24,8 @@ done
 
 # fzf completion
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Bash completion with git
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # If we want to launch a tmux windows each time we launch terminal ?
 # if [ "$TMUX" = "" ]; then exec tmux; fi
