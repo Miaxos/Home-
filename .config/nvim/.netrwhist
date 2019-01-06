@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/anthonygriffon/Dev/Freyar/freyarApp/src/domains/Animals/types'
+let g:netrw_dirhist_2='/Users/anthonygriffon/Dev/Freyar/freyarApp/src/domains/Animals'
+let g:netrw_dirhist_3='/Users/anthonygriffon/Dev/Freyar/freyarApp/src/domains'
+let g:netrw_dirhist_4='/Users/anthonygriffon/Dev/Freyar/freyarApp/src'

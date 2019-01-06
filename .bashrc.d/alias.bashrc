@@ -12,6 +12,8 @@
 alias sudo='sudo '
 # Speedtest
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+# Meteo
+alias meteo="curl wttr.in/Nantes"
 
 # ======================= Music =======================
 
@@ -48,6 +50,9 @@ alias gaa="git add *"
 alias ga="git add"
 alias gk="git checkout"
 alias gs="git status"
+
+# Git stand-up
+alias gsu="git-standup"
 
 alias gl="git ls"
 

@@ -819,3 +819,74 @@ Jan 01 19:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
 Jan 01 19:14 : player: played "Non-Album/Maître Gims/Le Pire.mp3"
 Jan 01 19:17 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
 Jan 01 19:17 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 04 22:10 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 04 22:10 : config: option 'auto_resample' on line 33 was not recognized
+Jan 04 22:10 : config: option 'use_mmap' on line 34 was not recognized
+Jan 04 22:10 : client: [0] opened from 127.0.0.1:52085
+Jan 04 22:10 : client: [0] closed
+Jan 05 01:47 : client: [1] opened from 127.0.0.1:54701
+Jan 05 01:47 : client: [1] closed
+Jan 05 15:15 : client: [2] opened from 127.0.0.1:60366
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:19 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:19 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"
+Jan 05 15:19 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:22 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:22 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:23 : player: played "Non-Album/Naâman/Outta Road.mp3"
+Jan 05 15:27 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:27 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:27 : player: played "Non-Album/OneRepublic/Counting Stars.mp3"
+Jan 05 15:31 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:31 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:31 : player: played "Non-Album/P!nk/Just Give Me a Reason.mp3"
+Jan 05 15:35 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:35 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:36 : player: played "Non-Album/Passenger/Let Her Go.mp3"
+Jan 05 15:41 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:41 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:42 : player: played "Non-Album/The Police/Every Breath You Take.mp3"
+Jan 05 15:46 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 05 15:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 05 15:46 : player: played "Non-Album/Simply Three/Wake Me Up.mp3"
+Jan 05 15:47 : ffmpeg/mp3float: Could not update timestamps for skipped samples.

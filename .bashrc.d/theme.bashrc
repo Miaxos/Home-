@@ -62,7 +62,10 @@ export RESET
 symbol="λ "
 
 # Only show the current directory's name in the tab
+#
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -a"
+
 # PS1
 PS1="\[${BOLD}${MAGENTA}\]\u ${PURPLE}(\$(f_batt)) \[$ORANGE\]in \[$GREEN\]\w\[$ORANGE\] (\$(parse_git_branch))\[$PURPLE\]\[$RESET\]\n\[$GREEN\]$symbol\[$RESET\]"
 # PS1="\[${BOLD}${MAGENTA}\]\u ${PURPLE}(\$(f_batt)) \[$ORANGE\]in \[$GREEN\]\w\[$ORANGE\] (\$(parse_git_branch))\[$PURPLE\]\[$RESET\]\n\[$GREEN\]$symbol\[$RESET\]"

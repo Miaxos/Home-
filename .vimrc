@@ -10,6 +10,12 @@
 "
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+autocmd BufNewFile,BufRead *.ts set filetype=typescript
+
+" ================ Fix ====================
+
 filetype off                  " required
 
 " ================ General Config ====================
@@ -27,6 +33,9 @@ syntax on
 " Leader
 let mapleader = 'ù'
 
+call remote#host#RegisterPlugin('python3', '/home/anthonygriffon/.vim/bundle/deoplete.nvim/rplugin/python3/deoplete.py', [
+      \ {'sync': 1, 'name': 'DeopleteInitializePython', 'type': 'command', 'opts': {}},
+      \ ])
 
 " =============== Vundle Initialization ===============
 " set the runtime path to include Vundle and initialize
@@ -45,6 +54,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'morhetz/gruvbox'
 " ## Navigation
 Plugin 'scrooloose/nerdtree'
+" ## Indentation
+Plugin 'Yggdroot/indentLine'
 " ## Git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
@@ -63,7 +74,6 @@ Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'Raimondi/delimitMate'
 " Plugin 'pangloss/vim-javascript'
 " Plugin 'othree/html5.vim'
-"" Plugin 'Yggdroot/indentLine'
 " Plugin 'hail2u/vim-css3-syntax'
 " Plugin 'tpope/vim-commentary'
 " Plugin 'Yggdroot/indentLine'
@@ -72,12 +82,17 @@ Plugin 'terryma/vim-multiple-cursors'
 " Asyncronous linting with ALE
 Plugin 'w0rp/ale'
 " Code completion vim
-Plugin 'autozimu/LanguageClient-neovim', {
+Plugin 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
+" Typescript
+Plugin 'leafgarland/typescript-vim'
+
+
+" Plugin 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
       \ }
-Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plugin 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+" Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plugin 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 " Plugin 'ap/vim-css-color'
 
 call vundle#end()            " required
@@ -164,6 +179,9 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+
 " ================ FZF plugin ========================
 
 " In Neovim, you can set up fzf window using a Vim command
@@ -178,6 +196,135 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" ================ Keep Fold ========================
+"
+" Keep fold done with zf when close and reopen files
+"
+" autocmd BufWinLeave *.* mkview
+" autocmd BufWinEnter *.* silent loadview
+
+" ================ CoC.vim ========================
+"
+" if hidden not set, TextEdit might fail.
+set hidden
+
+" Better display for messages
+set cmdheight=2
+
+" Smaller updatetime for CursorHold & CursorHoldI
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+
+" always show signcolumns
+set signcolumn=yes
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> for trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Use `[c` and `]c` for navigate diagnostics
+nmap <silent> <Leader>z <Plug>(coc-diagnostic-prev)
+nmap <silent> <Leader>a <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> <Leader>g <Plug>(coc-definition)
+nmap <silent> <Leader>t <Plug>(coc-type-definition)
+nmap <silent> <Leader>i <Plug>(coc-implementation)
+nmap <silent> <Leader>r <Plug>(coc-references)
+
+" Use K for show documentation in preview window
+nnoremap <silent> <Leader>k :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if &filetype == 'vim'
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight symbol under cursor on CursorHold
+" autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Remap for rename current word
+nmap <Leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+vmap <Leader>f  <Plug>(coc-format-selected)
+nmap <Leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+" vmap <leader>a  <Plug>(coc-codeaction-selected)
+" nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap for do codeAction of current line
+" nmap <leader>ac  <Plug>(coc-codeaction)
+" Fix autofix problem of current line
+nmap <Leader>q  <Plug>(coc-fix-current)
+
+" Use `:Format` for format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
+" Use `:Fold` for fold current buffer
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+
+" Add diagnostic info for https://github.com/itchyny/lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
+      \ },
+      \ }
+
+
+
+" Shortcuts for denite interface
+" Show extension list
+" nnoremap <silent> <space>e  :<C-u>Denite coc-extension<cr>
+" Show symbols of current buffer
+" nnoremap <silent> <space>o  :<C-u>Denite coc-symbols<cr>
+" Search symbols of current workspace
+" nnoremap <silent> <space>t  :<C-u>Denite coc-workspace<cr>
+" Show diagnostics of current workspace
+" nnoremap <silent> <space>a  :<C-u>Denite coc-diagnostic<cr>
+" Show available commands
+" nnoremap <silent> <space>c  :<C-u>Denite coc-command<cr>
+" Show available services
+" nnoremap <silent> <space>s  :<C-u>Denite coc-service<cr>
+" Show links of current buffer
+" nnoremap <silent> <space>l  :<C-u>Denite coc-link<cr>
 
 " ================ NERDTree Plugin ========================
 
@@ -195,7 +342,6 @@ nnoremap <Leader>p :NERDTreeFind<CR>
 " To disable the weird ? for help
 let NERDTreeMinimalUI = 0
 let NERDTreeDirArrows = 1
-
 
 " ================ Vim GitGutter ========================
 
@@ -273,9 +419,9 @@ let g:deoplete#sources#ternjs#in_literal = 0
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'typescript': ['tsserver'],
-    \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio', 'tsserver'],
-    \ 'javascript.jsx': ['tcp://127.0.0.1:2089', 'tsserver'],
+    \ 'typescript': ['javascript-typescript-stdio'],
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ }
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loggingLevel = 'DEBUG'

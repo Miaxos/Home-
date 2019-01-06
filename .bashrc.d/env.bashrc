@@ -14,7 +14,7 @@ export PATH=$PATH:~/.bin
 # Yarn global
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Ruby path
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
 # ==================== THEFUCK =======================
 
@@ -23,6 +23,10 @@ eval $(thefuck --alias)
 # ==================== HUB =======================
 
 eval "$(hub alias -s)"
+
+# ==================== Autojum =======================
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # ==================== Fzf =======================
 
@@ -36,6 +40,9 @@ export EDITOR="/usr/local/bin/nvim"
 
 # Visual is used as EDITOR by some programs
 export VISUAL="/usr/local/bin/nvim"
+
+# Set terminal color
+export TERM="screen-256color";
 
 # Set default blocksize for ls, df, du
 # from this: http://hints.macworld.com/comment.php?mode=view&cid=24491

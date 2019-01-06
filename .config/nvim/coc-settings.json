@@ -1,0 +1,10 @@
+{
+  "tsserver.enable": true,
+  "tsserver.log": "verbose",
+  "tsserver.trace.server": "verbose",
+  "tsserver.enableJavascript": true,
+  "typescript.suggest.paths": true,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.preferences.noSemicolons": false,
+  "typescript.preferences.quoteStyle": "single"
+}
