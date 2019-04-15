@@ -1,13 +1,17 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Anthony Griffon
-	email = anthony.griffon@iadvize.com
+  email = anthony.griffon@iadvize.com
 [core]
 	excludesfile = /Users/anthonygriffon/.gitignore_global
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
   ignorecase = false
 	editor = nvim
 [alias]
+  aa= !git add -u && git add . && git status
+  cob = checkout -b
+  up = !git fetch origin && git rebase origin/master
+  ir = !git rebase -i origin/master
   hub =! echo `git config remote.origin.url` | sed -E s/[a-z]+@github\\.com:// | sed s/\\.git$//
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
   bb = !sh -c 'git rev-parse --abbrev-ref HEAD | pbcopy'
