@@ -45,6 +45,7 @@ alias gc="git commit"
 # With fuzzy search
 alias gkba='git checkout -b $(git branch -a | fzf)'
 alias gb='git checkout $(git branch | fzf)'
+alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p'
 
 alias gaa="git add *"
 alias ga="git add"

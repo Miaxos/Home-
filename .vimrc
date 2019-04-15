@@ -80,11 +80,14 @@ Plugin 'terryma/vim-multiple-cursors'
 " Plugin 'Vimjas/vim-python-pep8-indent'
 " ## Linting
 " Asyncronous linting with ALE
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
 " Code completion vim
 Plugin 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
 " Typescript
 Plugin 'leafgarland/typescript-vim'
+" Javascript
+Plugin 'pangloss/vim-javascript'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 
 
 " Plugin 'autozimu/LanguageClient-neovim', {
@@ -188,6 +191,7 @@ let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_
 let g:fzf_layout = { 'window': 'enew' }
 let g:fzf_layout = { 'window': '-tabnew' }
 let g:fzf_layout = { 'window': '10split enew' }
+nmap <silent> <C-A> :Files<CR>
 
 " ================ Indentation ========================
 "
@@ -271,6 +275,16 @@ nmap <Leader>rn <Plug>(coc-rename)
 " Remap for format selected region
 vmap <Leader>f  <Plug>(coc-format-selected)
 nmap <Leader>f  <Plug>(coc-format-selected)
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+vmap = <Plug>(coc-format-selected)
+nmap <leader>fo  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -417,19 +431,5 @@ let g:deoplete#sources#ternjs#in_literal = 0
 
 " Required for operations modifying multiple buffers like rename.
 set hidden
-
-let g:LanguageClient_serverCommands = {
-    \ 'typescript': ['javascript-typescript-stdio'],
-    \ 'javascript': ['javascript-typescript-stdio'],
-    \ 'javascript.jsx': ['javascript-typescript-stdio'],
-    \ }
-let g:LanguageClient_autoStart = 1
-let g:LanguageClient_loggingLevel = 'DEBUG'
-let g:LanguageClient_loggingFile = '/Users/anthonygriffon/Dev/lc.log'
-
-nnoremap <F11> :call LanguageClient#textDocument_hover()<CR>
-nnoremap <F12> :call LanguageClient#textDocument_definition()<CR>
-nnoremap <Leader> <F2> :call LanguageClient#textDocument_rename()<CR>
-
 
 set conceallevel=0
