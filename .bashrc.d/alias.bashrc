@@ -15,6 +15,9 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 # Meteo
 alias meteo="curl wttr.in/Nantes"
 
+# Random passwd
+alias rdmpwd="openssl rand -base64 32 | pbcopy"
+
 # ======================= Music =======================
 
 # To download youtube audio

@@ -2,3 +2,5 @@
 secret.bashrc
 
 .DS_Store
+
+.config/coc/*
