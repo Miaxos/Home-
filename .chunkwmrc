@@ -28,7 +28,8 @@ chunkc core::log_level warn
 # NOTE: specify the absolutepath to the directory to use when loading a plugin.
 #
 
-chunkc core::plugin_dir /usr/local/Cellar/chunkwm/HEAD-2b653e4/share/chunkwm/plugins
+chunkc core::plugin_dir /usr/local/opt/chunkwm/share/chunkwm/plugins
+
 
 
 #
@@ -36,7 +37,9 @@ chunkc core::plugin_dir /usr/local/Cellar/chunkwm/HEAD-2b653e4/share/chunkwm/plu
 #       and automatically reload any '.so' file that is changed.
 #
 
-chunkc core::hotload 0
+chunkc core::hotload 1
+chunkc core::unload tiling.so
+chunkc core::unload ffm.so
 
 #
 # NOTE: the following are config variables for the chunkwm-tiling plugin.
@@ -53,8 +56,14 @@ chunkc set global_desktop_mode           bsp
 chunkc set global_desktop_offset_top     0
 chunkc set global_desktop_offset_bottom  0
 chunkc set global_desktop_offset_left    0
-chunkc set global_desktop_offset_right   0
-chunkc set global_desktop_offset_gap     0
+chunkc set global_desktop_offset_right   50
+chunkc set global_desktop_offset_gap     10
+
+chunkc set 2_desktop_offset_top          20
+chunkc set 2_desktop_offset_bottom       20
+chunkc set 2_desktop_offset_left         0
+chunkc set 2_desktop_offset_right        0
+chunkc set 2_desktop_offset_gap          10
 
 #
 # NOTE: syntax for desktop-specific settings
@@ -71,8 +80,8 @@ chunkc set global_desktop_offset_gap     0
 chunkc set desktop_padding_step_size     10.0
 chunkc set desktop_gap_step_size         5.0
 
-chunkc set bsp_spawn_left                1
-chunkc set bsp_optimal_ratio             1.618
+chunkc set bsp_spawn_left                0
+chunkc set bsp_optimal_ratio             1.2
 chunkc set bsp_split_mode                optimal
 chunkc set bsp_split_ratio               0.5
 
@@ -84,7 +93,7 @@ chunkc set window_float_next             0
 chunkc set window_region_locked          1
 
 chunkc set mouse_move_window             \"fn 1\"
-chunkc set mouse_resize_window           \"fn 2\"
+chunkc set mouse_resize_window           \"shift fn 1\"
 chunkc set mouse_motion_interval         35
 
 chunkc set preselect_border_color        0xffd75f5f
@@ -99,8 +108,8 @@ chunkc set preselect_border_outline      0
 chunkc set window_float_topmost          0
 chunkc set window_fade_inactive          0
 chunkc set window_fade_alpha             0.85
-chunkc set window_fade_duration          0.25
-chunkc set window_use_cgs_move           0
+chunkc set window_fade_duration          0
+chunkc set window_use_cgs_move           1
 
 #
 # NOTE: the following are config variables for the chunkwm-border plugin.
@@ -139,4 +148,4 @@ chunkc core::load ffm.so
 
 chunkc tiling::rule --owner Finder --name Copy --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
-chunkc tiling::rule --owner Emacs --except "^$" --state tile &
+chunkc tiling::rule --owner Chrome --name DevTools --state float &
