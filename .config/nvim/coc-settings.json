@@ -4,7 +4,31 @@
   "tsserver.trace.server": "verbose",
   "tsserver.enableJavascript": true,
   "typescript.suggest.paths": true,
+  "typescript.suggest.autoImports": true,
   "javascript.preferences.quoteStyle": "single",
   "javascript.preferences.noSemicolons": false,
-  "typescript.preferences.quoteStyle": "single"
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.showUnused": true,
+  "typescript.referencesCodeLens.enable": true,
+  "coc.preferences.codeLens.enable": true,
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "args": [
+        "--stdio"
+      ],
+      "filetypes": [
+        "elm"
+      ],
+      "rootPatterns": [
+        "elm.json"
+      ],
+      "initializationOptions": {
+        "runtime": "node",
+        "elmPath": "elm",
+        "elmFormatPath": "elm-format",
+        "elmTestPath": "elm-test"
+      }
+    }
+  }
 }
