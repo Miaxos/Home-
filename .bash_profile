@@ -34,3 +34,4 @@ fi
 # If we want to launch a tmux windows each time we launch terminal ?
 # if [ "$TMUX" = "" ]; then exec tmux; fi
 
+export PATH="/usr/local/sbin:$PATH"

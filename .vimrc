@@ -13,6 +13,8 @@ set nocompatible
 
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.ts set filetype=typescript
+autocmd BufNewFile,BufRead *.elm set filetype=elm
+autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " ================ Fix ====================
 
@@ -48,6 +50,8 @@ set clipboard=unnamed
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+" ## ELM
+Plugin 'andys8/vim-elm-syntax'
 " ## Visual
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -259,7 +263,7 @@ nmap <silent> <Leader>r <Plug>(coc-references)
 nnoremap <silent> <Leader>k :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-  if &filetype == 'vim'
+  if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
@@ -267,7 +271,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight symbol under cursor on CursorHold
-" autocmd CursorHold * silent call CocActionAsync('highlight')
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <Leader>rn <Plug>(coc-rename)
@@ -308,6 +312,15 @@ command! -nargs=0 Format :call CocAction('format')
 
 " Use `:Fold` for fold current buffer
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" Find symbol of current document
+nnoremap <silent> <leader>o  :<C-u>CocList outline<cr>
+" Search workspace symbols
+nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr>
+
 
 
 " Add diagnostic info for https://github.com/itchyny/lightline.vim
