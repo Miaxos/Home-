@@ -15,6 +15,10 @@ autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.ts set filetype=typescript
 autocmd BufNewFile,BufRead *.elm set filetype=elm
 autocmd FileType json syntax match Comment +\/\/.\+$+
+autocmd FileType typescript.tsx let b:coc_root_patterns = ['.git', '.env']
+autocmd FileType typescript let b:coc_root_patterns = ['.git', '.env']
+autocmd FileType javascript let b:coc_root_patterns = ['.git', '.env']
+
 
 " ================ Fix ====================
 
