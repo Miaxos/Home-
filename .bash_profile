@@ -35,3 +35,4 @@ fi
 # if [ "$TMUX" = "" ]; then exec tmux; fi
 
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"

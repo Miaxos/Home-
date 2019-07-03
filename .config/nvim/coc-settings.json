@@ -3,6 +3,7 @@
   "tsserver.log": "verbose",
   "tsserver.trace.server": "verbose",
   "tsserver.enableJavascript": true,
+  "tsserver.implicitProjectConfig.checkJs": false,
   "typescript.suggest.paths": true,
   "typescript.suggest.autoImports": true,
   "javascript.preferences.quoteStyle": "single",
