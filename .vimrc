@@ -14,10 +14,12 @@ set nocompatible
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.ts set filetype=typescript
 autocmd BufNewFile,BufRead *.elm set filetype=elm
+autocmd BufNewFile,BufRead *.sbt set filetype=scala
 autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType typescript.tsx let b:coc_root_patterns = ['.git', '.env']
 autocmd FileType typescript let b:coc_root_patterns = ['.git', '.env']
 autocmd FileType javascript let b:coc_root_patterns = ['.git', '.env']
+
 
 
 " ================ Fix ====================
@@ -96,6 +98,8 @@ Plugin 'leafgarland/typescript-vim'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
+" Scala
+Plugin 'derekwyatt/vim-scala'
 
 
 " Plugin 'autozimu/LanguageClient-neovim', {
@@ -251,7 +255,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
-" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use `[c` and `]c` for navigate diagnostics
 nmap <silent> <Leader>z <Plug>(coc-diagnostic-prev)
