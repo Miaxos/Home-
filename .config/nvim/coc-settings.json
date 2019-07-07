@@ -13,6 +13,16 @@
   "typescript.referencesCodeLens.enable": true,
   "coc.preferences.codeLens.enable": true,
   "languageserver": {
+		"metals": {
+			"command": "metals-vim",
+			"rootPatterns": [
+				"build.sbt"
+			],
+			"filetypes": [
+				"scala",
+				"sbt"
+			]
+		},
     "elmLS": {
       "command": "elm-language-server",
       "args": [
