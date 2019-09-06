@@ -15,6 +15,9 @@ export PATH=$PATH:~/.bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Ruby path
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+# Rust path
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # ==================== THEFUCK =======================
 
