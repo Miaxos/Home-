@@ -20,8 +20,8 @@ alias rdmpwd="openssl rand -base64 32 | pbcopy"
 
 # ======================= Tunnelblick =================
 
-alias tlc="tli connect $(tli list | fzf)"
-alias tld="tli disconnect $(tli status | grep CONNECTED | awk '{print $1}' | fzf)"
+alias tlc='tli connect $(tli list | fzf)'
+alias tld='tli disconnect $(tli status | grep CONNECTED | cut -d" " -f 1 | fzf)'
 
 # ======================= Music =======================
 
