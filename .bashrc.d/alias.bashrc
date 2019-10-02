@@ -18,6 +18,11 @@ alias meteo="curl wttr.in/Nantes"
 # Random passwd
 alias rdmpwd="openssl rand -base64 32 | pbcopy"
 
+# ======================= Tunnelblick =================
+
+alias tlc="tli connect $(tli list | fzf)"
+alias tld="tli disconnect $(tli status | grep CONNECTED | awk '{print $1}' | fzf)"
+
 # ======================= Music =======================
 
 # To download youtube audio
@@ -37,6 +42,7 @@ alias wget="wget -c"
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 # to cache data with mpv
 alias mpv="mpv --cache=80000"
+alias mpvs="mpv --cache=80000 --video-sync=display-resample"
 
 # ======================= Git =======================
 
