@@ -23,6 +23,25 @@ alias rdmpwd="openssl rand -base64 32 | pbcopy"
 alias tlc='tli connect $(tli list | fzf)'
 alias tld='tli disconnect $(tli status | grep CONNECTED | cut -d" " -f 1 | fzf)'
 
+# ======================= Nomad =======================
+
+nomad-status() {
+  local job
+
+  job=$(nomad job status | tail +2 | fzf -1 -q "$1" | awk '{ print $1 }')
+
+  [[ -n "$job" ]] && nomad job status "$job"
+}
+
+nomad-log() {
+  local allocation job
+
+  job=$(nomad job status | tail +2 | fzf -1 -q "$1" | awk '{ print $1 }')
+  allocation=$(nomad job status "$job" | awk '/Allocations/,EOF' | tail +3 | fzf -1 -q "$1" | awk '{ print $1 }')
+
+  [ -n "$allocation" ] && nomad alloc logs -tail -f -n 300 "$allocation"
+}
+
 # ======================= Music =======================
 
 # To download youtube audio
