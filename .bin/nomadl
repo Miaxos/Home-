@@ -1,0 +1,1 @@
+nomad status $(nomad status | cut -d" " -f 1 | fzf) |awk '/run.*ago/ {system("nomadlogs "$1"")}'

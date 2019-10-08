@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function parallel_commands {
+  for cmd in "$@"; do {
+    $cmd & pid=$!
+    PID_LIST+=" $pid";
+  } done
+
+  trap "kill $PID_LIST" SIGINT
+  wait $PID_LIST
+}
+
+parallel_commands "nomad logs -tail -n 100 -f $1" "nomad logs -tail -n 100 -f -stderr $1"
