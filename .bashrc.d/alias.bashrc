@@ -18,6 +18,11 @@ alias meteo="curl wttr.in/Nantes"
 # Random passwd
 alias rdmpwd="openssl rand -base64 32 | pbcopy"
 
+# ====================================================
+
+# Google alias
+alias g='googler -n 7 -c en -l en '
+
 # ======================= Tunnelblick =================
 
 alias tlc='tli connect $(tli list | fzf)'
