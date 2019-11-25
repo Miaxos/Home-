@@ -100,6 +100,56 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 " Scala
 Plugin 'derekwyatt/vim-scala'
+" C #
+Plugin 'OmniSharp/omnisharp-vim'
+
+" Carbon
+Plugin 'kristijanhusak/vim-carbon-now-sh'
+
+let g:carbon_now_sh_options =
+      \ { 'bg': 'rgba(52%2C57%2C63%2C1)',
+      \ 't': 'monokai' }
+
+" ====================== C SHARP =============================
+"
+" Better with stdio server
+let g:OmniSharp_server_stdio = 1
+
+" Update semantic highlighting on BufEnter and InsertLeave
+let g:OmniSharp_highlight_types = 2
+
+" OmniSharp Roselyn server
+let g:OmniSharp_server_path = '/Users/anthonygriffon/Dev/omnisharp-roslyn/artifacts/scripts/OmniSharp.Stdio'
+
+augroup omnisharp_commands
+    autocmd!
+
+    " Show type information automatically when the cursor stops moving
+    autocmd CursorHold *.cs call OmniSharp#TypeLookupWithoutDocumentation()
+
+    " The following commands are contextual, based on the cursor position.
+    autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
+    autocmd FileType cs nnoremap <buffer> gh :OmniSharpSignatureHelp<CR>
+    autocmd FileType cs nnoremap <buffer> tt :OmniSharpTypeLookup<CR>
+    autocmd FileType cs inoremap <buffer> go :OmniSharpSignatureHelp<CR>
+    autocmd FileType cs nnoremap <buffer> gdc :OmniSharpDocumentation<CR>
+
+    autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+
+    " Finds members in the current buffer
+    autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
+
+    autocmd FileType cs nnoremap <buffer> <Leader>fx :OmniSharpFixUsings<CR>
+
+    " Navigate up and down by method/property/field
+    autocmd FileType cs nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>
+    autocmd FileType cs nnoremap <buffer> <C-j> :OmniSharpNavigateDown<CR>
+
+    " Find all code errors/warnings for the current solution and populate the quickfix window
+    autocmd FileType cs nnoremap <buffer> gcc :OmniSharpGlobalCodeCheck<CR>
+augroup END
 
 
 " Plugin 'autozimu/LanguageClient-neovim', {
