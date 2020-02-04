@@ -1,7 +1,12 @@
 {
   "dependencies": {
-    "create-react-app": "^2.1.1",
+    "create-react-app": "^3.2.0",
     "create-react-native-app": "^2.0.2",
-    "neovim": "^4.2.1"
+    "create-typescript-api": "^1.1.2",
+    "diff-so-fancy": "^1.2.7",
+    "generator-code": "^1.2.7",
+    "neovim": "^4.2.1",
+    "open-pip-cli": "^1.4.0",
+    "yo": "^3.1.0"
   }
 }

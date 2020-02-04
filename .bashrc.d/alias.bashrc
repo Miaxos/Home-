@@ -20,6 +20,43 @@ alias rdmpwd="openssl rand -base64 32 | pbcopy"
 
 # ====================================================
 
+# Find large files and directories
+alias fat='du -a | sort -n -r | head -n 20'
+
+# Memory
+alias meminfo='free -m -l -t'
+
+# Get top process eating memory
+alias psmem='ps aux | sort -nr -k 4'
+alias psmem10='ps aux | sort -nr -k 4 | head -10'
+
+# Get top process eating cpu
+alias pscpu='ps aux | sort -nr -k 3'
+alias pscpu10='ps aux | sort -nr -k 3 | head -10'
+
+
+# iptables
+alias ipt='iptables'
+alias iptlist='iptables -L -n -v --line-numbers'
+alias iptlistin='iptables -L INPUT -n -v --line-numbers'
+alias iptlistout='iptables -L OUTPUT -n -v --line-numbers'
+alias iptlistfw='iptables -L FORWARD -n -v --line-numbers'
+alias firewall='iptlist'
+alias ban='iptables -I INPUT -j DROP -s'
+alias unban='iptables -D INPUT -j DROP -s'
+alias banin='iptables -I INPUT -j DROP -s'
+alias unbanin='iptables -D INPUT -j DROP -s'
+alias banout='iptables -I OUTPUT -j DROP -s'
+alias unbanout='iptables -D OUTPUT -j DROP -s'
+alias listbans='iptables -L -v -n | grep -e Chain -e DROP'
+
+# IP addresses
+alias localip="ipconfig getifaddr en5"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+
+# ====================================================
+
 # Google alias
 alias g='googler -n 7 -c en -l en '
 
@@ -65,8 +102,7 @@ alias wget="wget -c"
 # to launch VLC
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 # to cache data with mpv
-alias mpv="mpv --cache=80000"
-alias mpvs="mpv --cache=80000 --video-sync=display-resample"
+alias mpvs="mpv --video-sync=display-resample"
 
 # ======================= Git =======================
 

@@ -492,6 +492,11 @@ let g:ale_completion_enabled = 1
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#ternjs#docs = 1
 
+" ================ RUSTFMT ================================
+
+let g:rustfmt_autosave = 1
+
+
 " ================ DEOPLETE TernJS Plugins ========================
 "
 let g:deoplete#sources#ternjs#filetypes = [ 'js', 'jsx' ]

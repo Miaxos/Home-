@@ -7,6 +7,7 @@
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
   ignorecase = false
 	editor = nvim
+	pager = diff-so-fancy | less --tabs=2 -RFX
 [alias]
   aa= !git add -u && git add . && git status
   cob = checkout -b

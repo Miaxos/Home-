@@ -890,3 +890,70 @@ Jan 05 15:46 : ffmpeg/mp3float: Could not update timestamps for discarded sample
 Jan 05 15:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
 Jan 05 15:46 : player: played "Non-Album/Simply Three/Wake Me Up.mp3"
 Jan 05 15:47 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:36 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 27 11:36 : config: option 'auto_resample' on line 33 was not recognized
+Jan 27 11:36 : config: option 'use_mmap' on line 34 was not recognized
+Jan 27 11:36 : client: [0] opened from 127.0.0.1:50148
+Jan 27 11:36 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:39 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 27 11:39 : player: played "Non-Album/Therapie TAXI/Cri des loups.mp3"
+Jan 27 11:39 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:43 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 27 11:43 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:43 : player: played "Non-Album/Therapie TAXI feat. Roméo Elvis/Hit Sale (feat. Roméo Elvis).mp3"
+Jan 27 11:46 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 27 11:46 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:46 : player: played "Non-Album/Trois Cafés Gourmands/Á nos souvenirs.mp3"
+Jan 27 11:51 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 27 11:51 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:51 : player: played "Non-Album/Vald/Deviens génial.mp3"
+Jan 27 11:54 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jan 27 11:54 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jan 27 11:55 : player: played "Non-Album/Vitaaen duo avec Slimane/Je te le donne.mp3"
+Jan 27 11:57 : client: [0] closed
+Mar 24 20:50 : player: played "Non-Album/twenty one pilots/Heathens (DISTO remix).mp3"
+Apr 30 19:10 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 30 19:10 : config: option 'auto_resample' on line 33 was not recognized
+Apr 30 19:10 : config: option 'use_mmap' on line 34 was not recognized
+Apr 30 19:11 : player: played "Non-Album/twenty one pilots/Heathens (DISTO remix).mp3"
+Sep 08 17:55 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 08 17:55 : config: option 'auto_resample' on line 33 was not recognized
+Sep 08 17:55 : config: option 'use_mmap' on line 34 was not recognized
+Sep 08 17:55 : client: [0] opened from 127.0.0.1:61455
+Sep 08 17:55 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Sep 08 17:55 : client: [0] closed
+Sep 08 17:58 : client: [1] opened from 127.0.0.1:61638
+Sep 08 17:58 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Sep 08 17:58 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Sep 08 17:59 : client: [1] closed
+Sep 22 23:30 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"
+Sep 22 23:32 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 22 23:32 : config: option 'auto_resample' on line 33 was not recognized
+Sep 22 23:32 : config: option 'use_mmap' on line 34 was not recognized
+Sep 22 23:32 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Sep 22 23:32 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Oct 13 16:06 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"
+Oct 13 16:07 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Oct 13 16:07 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Oct 13 16:07 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 13 16:07 : config: option 'auto_resample' on line 33 was not recognized
+Oct 13 16:07 : config: option 'use_mmap' on line 34 was not recognized
+Nov 18 22:25 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"
+Nov 18 22:40 : config: inotify: auto_update was disabled. enable during compilation phase
+Nov 18 22:40 : config: option 'auto_resample' on line 33 was not recognized
+Nov 18 22:40 : config: option 'use_mmap' on line 34 was not recognized
+Nov 18 22:40 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Nov 18 22:40 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Nov 26 09:17 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"
+Nov 26 09:31 : config: inotify: auto_update was disabled. enable during compilation phase
+Nov 26 09:31 : config: option 'auto_resample' on line 33 was not recognized
+Nov 26 09:31 : config: option 'use_mmap' on line 34 was not recognized
+Nov 26 09:31 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Nov 26 09:31 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Nov 27 14:55 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"
+Nov 27 15:02 : config: inotify: auto_update was disabled. enable during compilation phase
+Nov 27 15:02 : config: option 'auto_resample' on line 33 was not recognized
+Nov 27 15:02 : config: option 'use_mmap' on line 34 was not recognized
+Nov 27 15:02 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Nov 27 15:02 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Dec 10 16:44 : player: played "Meg & Dia/00 Monster (DotEXE Remix).mp3"

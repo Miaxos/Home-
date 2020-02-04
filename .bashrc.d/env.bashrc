@@ -8,6 +8,7 @@
 # @author: Anthony Griffon
 # @desc: Alias for bashrc.
 
+export GOPATH=~/go/
 # ==================== PATH =======================
 ## Home local bin
 export PATH=$PATH:~/.bin
@@ -18,6 +19,9 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 # Rust path
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+# Kafka path
+export PATH="$HOME/.kafka/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
 
 # ==================== THEFUCK =======================
 
