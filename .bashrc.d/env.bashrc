@@ -34,7 +34,8 @@ eval "$(hub alias -s)"
 # ==================== Fzf =======================
 
 # Ignore node_modules
-export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+# export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+export FZF_DEFAULT_COMMAND='fd --hidden --type f .'
 
 # ==================== GLOBAL =======================
 #

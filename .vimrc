@@ -92,7 +92,7 @@ Plugin 'terryma/vim-multiple-cursors'
 " Asyncronous linting with ALE
 " Plugin 'w0rp/ale'
 " Code completion vim
-Plugin 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
+Plugin 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " Typescript
 Plugin 'leafgarland/typescript-vim'
 " Javascript
@@ -102,6 +102,8 @@ Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'derekwyatt/vim-scala'
 " C #
 Plugin 'OmniSharp/omnisharp-vim'
+" Vim dev icons
+Plugin 'ryanoasis/vim-devicons'
 
 " Carbon
 Plugin 'kristijanhusak/vim-carbon-now-sh'
@@ -151,7 +153,6 @@ augroup omnisharp_commands
     autocmd FileType cs nnoremap <buffer> gcc :OmniSharpGlobalCodeCheck<CR>
 augroup END
 
-
 " Plugin 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
@@ -159,6 +160,15 @@ augroup END
 " Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plugin 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 " Plugin 'ap/vim-css-color'
+"
+"
+" Carbon
+Plugin 'kristijanhusak/vim-carbon-now-sh'
+
+let g:carbon_now_sh_options =
+      \ { 'bg': 'rgba(52%2C57%2C63%2C1)',
+      \ 't': 'monokai' }
+
 
 call vundle#end()            " required
 
@@ -174,6 +184,7 @@ let g:ruby_host_prog = '/usr/local/lib/ruby/2.6.0/gems/neovim-0.8.0/exe/neovim-r
 
 set noswapfile
 set nobackup
+set nowritebackup
 set nowb
 
 " ================ Persistent Undo ==================
@@ -250,10 +261,37 @@ let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_
 " ================ FZF plugin ========================
 
 " In Neovim, you can set up fzf window using a Vim command
-let g:fzf_layout = { 'window': 'enew' }
-let g:fzf_layout = { 'window': '-tabnew' }
-let g:fzf_layout = { 'window': '10split enew' }
+" let g:fzf_layout = { 'window': 'enew' }
+" let g:fzf_layout = { 'window': '-tabnew' }
+" let g:fzf_layout = { 'window': '10split enew' }
 nmap <silent> <C-A> :Files<CR>
+
+" https://github.com/neovim/neovim/issues/9718#issuecomment-559573308
+function! CreateCenteredFloatingWindow()
+    let width = min([&columns - 4, max([80, &columns - 20])])
+    let height = min([&lines - 4, max([20, &lines - 10])])
+    let top = ((&lines - height) / 2) - 1
+    let left = (&columns - width) / 2
+    let opts = {'relative': 'editor', 'row': top, 'col': left, 'width': width, 'height': height, 'style': 'minimal'}
+
+    let top = "╭" . repeat("─", width - 2) . "╮"
+    let mid = "│" . repeat(" ", width - 2) . "│"
+    let bot = "╰" . repeat("─", width - 2) . "╯"
+    let lines = [top] + repeat([mid], height - 2) + [bot]
+    let s:buf = nvim_create_buf(v:false, v:true)
+    call nvim_buf_set_lines(s:buf, 0, -1, v:true, lines)
+    call nvim_open_win(s:buf, v:true, opts)
+    set winhl=Normal:Floating
+    let opts.row += 1
+    let opts.height -= 2
+    let opts.col += 2
+    let opts.width -= 4
+    call nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
+    au BufWipeout <buffer> exe 'bw '.s:buf
+endfunction
+
+let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
+let g:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {1..-1} | head -'.&lines.'"'
 
 " ================ Indentation ========================
 "
@@ -279,7 +317,7 @@ set hidden
 set cmdheight=2
 
 " Smaller updatetime for CursorHold & CursorHoldI
-set updatetime=300
+set updatetime=200
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -317,6 +355,10 @@ nmap <silent> <Leader>t <Plug>(coc-type-definition)
 nmap <silent> <Leader>i <Plug>(coc-implementation)
 nmap <silent> <Leader>r <Plug>(coc-references)
 
+" Metals decorator
+" https://scalameta.org/metals/docs/editors/vim.html#worksheets
+nmap <Leader>ws <Plug>(coc-metals-expand-decoration)
+
 " Use K for show documentation in preview window
 nnoremap <silent> <Leader>k :call <SID>show_documentation()<CR>
 
@@ -347,6 +389,12 @@ nmap <leader>rn <Plug>(coc-rename)
 " Remap for format selected region
 vmap = <Plug>(coc-format-selected)
 nmap <leader>fo  <Plug>(coc-format-selected)
+
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+  \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Run jest for current test
+nnoremap <leader>te :call CocAction('runCommand', 'jest.singleTest')<CR>
 
 augroup mygroup
   autocmd!
