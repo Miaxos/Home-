@@ -217,6 +217,7 @@ let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_
 " let g:fzf_layout = { 'window': '10split enew' }
 nmap <silent> <C-A> :Files<CR>
 
+" https://github.com/neovim/neovim/issues/9718#issuecomment-559573308
 function! CreateCenteredFloatingWindow()
     let width = min([&columns - 4, max([80, &columns - 20])])
     let height = min([&lines - 4, max([20, &lines - 10])])
