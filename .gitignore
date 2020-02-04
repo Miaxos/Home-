@@ -4,3 +4,16 @@ secret.bashrc
 .DS_Store
 
 .config/coc/*
+.config/coc/extensions/
+.vim/bundle/
+.config/.mono/
+.config/NuGet/
+.config/configstore/nodemon.json
+.config/configstore/update-notifier-@storybook/
+.config/configstore/update-notifier-electron-builder.json
+.config/configstore/update-notifier-nodemon.json
+.config/gh/
+.config/spotify-tui/
+.config/stetic/
+.config/wireshark/
+.config/xbuild/
