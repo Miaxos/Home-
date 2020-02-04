@@ -162,9 +162,6 @@ augroup END
 " Plugin 'ap/vim-css-color'
 "
 "
-" Carbon
-Plugin 'kristijanhusak/vim-carbon-now-sh'
-
 let g:carbon_now_sh_options =
       \ { 'bg': 'rgba(52%2C57%2C63%2C1)',
       \ 't': 'monokai' }
