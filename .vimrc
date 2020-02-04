@@ -104,7 +104,6 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'OmniSharp/omnisharp-vim'
 " Vim dev icons
 Plugin 'ryanoasis/vim-devicons'
-
 " Carbon
 Plugin 'kristijanhusak/vim-carbon-now-sh'
 
