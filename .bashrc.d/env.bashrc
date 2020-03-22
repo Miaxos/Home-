@@ -23,6 +23,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.kafka/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 
+# ==================== Kubernetes ===================
+export KUBECONFIG=/Users/anthonygriffon/kubetest/kubeconfig
+
 # ==================== THEFUCK =======================
 
 eval $(thefuck --alias)
