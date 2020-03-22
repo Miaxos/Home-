@@ -102,6 +102,7 @@ alias wget="wget -c"
 # to launch VLC
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 # to cache data with mpv
+alias mpv="mpv"
 alias mpvs="mpv --video-sync=display-resample"
 
 # ======================= Git =======================
@@ -116,7 +117,7 @@ alias gkba='git checkout -b $(git branch -a | fzf)'
 alias gba='git checkout $(git branch | fzf)'
 alias gbm='git checkout $(git branch --merged | fzf)'
 alias gb='git checkout $(git branch --no-merged | fzf)'
-alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p'
+alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add '
 
 alias gaa="git add *"
 alias ga="git add"
@@ -183,7 +184,7 @@ alias f='open -a Finder ./'
 alias drmae='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
 
 #webserver
-alias webserver="http-server . --ssl --color --cert='/Users/anthonygriffon/.certs/crt.txt' --key='/Users/anthonygriffon/.certs/key.txt' -p "
+alias webserver="http-server . --ssl --color --cert='/Users/anthonygriffon/Downloads/crt.txt' --key='/Users/anthonygriffon/Downloads/key.txt' -p "
 
 # Rg fuzzy find
 alias rgf="rg --column --line-number --hidden --ignore-case --no-heading --color=always "

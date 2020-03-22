@@ -22,9 +22,12 @@ do
  source "$file"
 done
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#    . $(brew --prefix)/etc/bash_completion
+# fi
+
 # fzf completion
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Bash completion with git
@@ -37,3 +40,5 @@ fi
 export PATH="$HOME/.cargo/bin:$PATH"
 
 source /Users/anthonygriffon/Library/Preferences/org.dystroy.broot/launcher/bash/br
+
+eval "$(starship init bash)"

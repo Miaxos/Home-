@@ -181,6 +181,7 @@ let g:ruby_host_prog = '/usr/local/lib/ruby/2.6.0/gems/neovim-0.8.0/exe/neovim-r
 set noswapfile
 set nobackup
 set nowritebackup
+set backupcopy=yes
 set nowb
 
 " ================ Persistent Undo ==================
@@ -260,6 +261,8 @@ let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_
 " let g:fzf_layout = { 'window': 'enew' }
 " let g:fzf_layout = { 'window': '-tabnew' }
 " let g:fzf_layout = { 'window': '10split enew' }
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse']}, <bang>0)
 nmap <silent> <C-A> :Files<CR>
 
 " https://github.com/neovim/neovim/issues/9718#issuecomment-559573308
@@ -287,7 +290,7 @@ function! CreateCenteredFloatingWindow()
 endfunction
 
 let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
-let g:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {1..-1} | head -'.&lines.'"'
+let g:fzf_files_options = '--preview "bat --theme="OneHalfDark" --style=numbers,changes --color always {1..-1} | (basename {1..-1} && head -'.&lines.')"'
 
 " ================ Indentation ========================
 "

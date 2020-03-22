@@ -26,6 +26,8 @@ export PATH="$GOPATH/bin:$PATH"
 # ==================== Kubernetes ===================
 export KUBECONFIG=/Users/anthonygriffon/kubetest/kubeconfig
 
+export JAVA_HOME=/Users/anthonygriffon/.bin/graalvm/Contents/Home
+
 # ==================== THEFUCK =======================
 
 eval $(thefuck --alias)
