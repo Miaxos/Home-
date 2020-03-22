@@ -19,6 +19,8 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export JAVA_HOME=/Users/anthonygriffon/.bin/graalvm/Contents/Home
+
 # ==================== THEFUCK =======================
 
 eval $(thefuck --alias)
