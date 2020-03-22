@@ -66,9 +66,11 @@ export RESET
 # export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 # export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ;} history -a"
 
-# PS1
+
 # PS1="\[${BOLD}${MAGENTA}\]\u ${PURPLE}(\$(f_batt)) \[$ORANGE\]in \[$GREEN\]\w\[$ORANGE\] (\$(parse_git_branch))\[$PURPLE\]\[$RESET\]\n\[$GREEN\]$symbol\[$RESET\]"
+# OLD PS1="\[${BOLD}${MAGENTA}\]\u ${PURPLE}(\$(f_batt)) \[$ORANGE\]in \[$GREEN\]\w\[$ORANGE\] (\$(parse_git_branch))\[$PURPLE\]\[$RESET\]\n\[$GREEN\]$symbol\[$RESET\]"
 # PS1="\[${BOLD}${MAGENTA}\]\u ${PURPLE}(\$(f_batt)) \[$ORANGE\]in \[$GREEN\]\w\[$ORANGE\] (\$(parse_git_branch))\[$PURPLE\]\[$RESET\]\n\[$GREEN\]$symbol\[$RESET\]"
+PS1="\[${BOLD}${MAGENTA}\]meow ${PURPLE}(\$(f_batt)) \[$ORANGE\]in \[$GREEN\]\w\[$ORANGE\] (\$(parse_git_branch))\[$PURPLE\]\[$RESET\]\n\[$GREEN\]$symbol\[$RESET\]"
 #PS1='$(f_notifyme)'$PS1
 # export PS1=$PS1
 # export PS2="\[$ORANGE\]>\[$RESET\]"

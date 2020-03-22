@@ -71,6 +71,22 @@ function rdl() {
   wget "$LINK"
 }
 
+# =========================== TEA ========================
+#   tea:  Notify for tea when it's ready to drink.
+#
+# ================================================================
+#
+
+function tea() {
+  local STEEP_TIME=${STEEP_TIME:=180}
+
+  echo "🍵 Thé en préparation..."
+  [[ "$STEEP_TIME" != [0-9]* ]] && exit 1
+  sleep "$STEEP_TIME"
+
+  terminal-notifier -title '🍵 Un petit thé ?' -message "C'est prêt !!" -appIcon 'https://www.emojibase.com/resources/img/emojis/apple/x2615.png.pagespeed.ic.fUhSj-YPGK.png'
+}
+
 # =========================== utility functions ========================
 # Functions that'll be used by other bashrc files. Do not use this
 # inside a prompt without knowing what you are doing.
@@ -110,4 +126,3 @@ function f_notifyme {
 function dm-env() {
   eval "$(docker-machine env dev)"
 }
-
