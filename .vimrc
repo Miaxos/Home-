@@ -102,6 +102,8 @@ Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'derekwyatt/vim-scala'
 " Vim dev icons
 Plugin 'ryanoasis/vim-devicons'
+" Float term for ranger
+Plugin 'voldikss/vim-floaterm'
 
 
 " Plugin 'autozimu/LanguageClient-neovim', {
@@ -261,6 +263,10 @@ set expandtab
 "
 " autocmd BufWinLeave *.* mkview
 " autocmd BufWinEnter *.* silent loadview
+"
+" ================ Ranger ========================
+nmap <silent> <Leader>p :FloatermNew ranger<CR>
+
 
 " ================ CoC.vim ========================
 "
@@ -424,7 +430,7 @@ let NERDTreeQuitOnOpen=1
 map <C-P> :NERDTreeToggle<CR>
 
 " open nerd tree at the file with ù+p
-nnoremap <Leader>p :NERDTreeFind<CR>
+" nnoremap <Leader>p :NERDTreeFind<CR>
 
 " To disable the weird ? for help
 let NERDTreeMinimalUI = 0
