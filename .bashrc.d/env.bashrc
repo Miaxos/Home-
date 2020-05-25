@@ -28,6 +28,10 @@ export KUBECONFIG=/Users/anthonygriffon/kubetest/kubeconfig
 
 export JAVA_HOME=/Users/anthonygriffon/.bin/graalvm/Contents/Home
 
+# ==================== Vi Bindings ==================
+
+set -o vi
+
 # ==================== THEFUCK =======================
 
 eval $(thefuck --alias)

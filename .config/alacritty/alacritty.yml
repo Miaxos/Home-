@@ -330,7 +330,7 @@ live_config_reload: true
 enable_experimental_conpty_backend: false
 
 # Send ESC (\x1b) before characters when alt is pressed.
-alt_send_esc: true
+alt_send_esc: false
 
 # Key bindings
 #
@@ -425,24 +425,35 @@ alt_send_esc: true
 #   - AppKeypad
 key_bindings:
   # (macOS)
-  - { key: Key0,   mods: Command, action: ResetFontSize                      }
-  - { key: Equals, mods: Command, action: IncreaseFontSize                   }
-  - { key: Add,    mods: Command, action: IncreaseFontSize                   }
-  - { key: Minus,  mods: Command, action: DecreaseFontSize                   }
+  - { key: Equals,    mods: Command,    action: DecreaseFontSize              }
+  - { key: Slash,     mods: Command,    action: IncreaseFontSize              }
+  - { key: Q,         mods: Command,    action: Quit                          }
+  - { key: W,         mods: Command,    action: Quit                          }
+# - { key: L,         mods: Alt,  chars: "|"                            }
+# - { key: Minus,     mods: Alt,        chars: "}"                            }
+# - { key: Key5,      mods: Alt|Shift,  chars: "["                            }
+# - { key: Minus,     mods: Alt|Shift,  chars: "]"                            }
+# - { key: N,         mods: Alt,        chars: "~"                            }
+# - { key: Period,    mods: Alt|Shift,  chars: "\\"                           }
+  - { key: N,      mods: Command, action: SpawnNewInstance                    }
+#  - { key: Key0,   mods: Command, action: ResetFontSize                      }
+#  - { key: Equals, mods: Command, action: IncreaseFontSize                   }
+#  - { key: Add,    mods: Command, action: IncreaseFontSize                   }
+#  - { key: Minus,  mods: Command, action: DecreaseFontSize                   }
   - { key: K,      mods: Command, action: ClearHistory                       }
   - { key: K,      mods: Command, chars: "\x0c"                              }
   - { key: V,      mods: Command, action: Paste                              }
   - { key: C,      mods: Command, action: Copy                               }
   - { key: H,      mods: Command, action: Hide                               }
-  - { key: Q,      mods: Command, action: Quit                               }
-  - { key: W,      mods: Command, action: Quit                               }
-  - { key: N,      mods: Command, action: SpawnNewInstance                   }
-  - { key: F,      mods: Command|Control, action: ToggleSimpleFullscreen     }
-
+#  - { key: Q,      mods: Command, action: Quit                               }
+#  - { key: W,      mods: Command, action: Quit                               }
+#  - { key: N,      mods: Command, action: SpawnNewInstance                   }
+#  - { key: F,      mods: Command|Control, action: ToggleSimpleFullscreen     }
+#
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
-  - { key: L,        mods: Control, action: ClearLogNotice                   }
-  - { key: L,        mods: Control, chars: "\x0c"                            }
+##- { key: L,        mods: Control, action: ClearLogNotice                   }
+##- { key: L,        mods: Control, chars: "\x0c"                            }
   - { key: Home,     mods: Alt,     chars: "\x1b[1;3H"                       }
   - { key: Home,                    chars: "\x1bOH",        mode: AppCursor  }
   - { key: Home,                    chars: "\x1b[H",        mode: ~AppCursor }
