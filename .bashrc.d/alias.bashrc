@@ -84,6 +84,7 @@ nomad-log() {
   [ -n "$allocation" ] && nomad alloc logs -tail -f -n 300 "$allocation"
 }
 
+
 # ======================= Music =======================
 
 # To download youtube audio
@@ -104,6 +105,7 @@ alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 # to cache data with mpv
 alias mpv="mpv"
 alias mpvs="mpv --video-sync=display-resample"
+alias ls="exa"
 
 # ======================= Git =======================
 
