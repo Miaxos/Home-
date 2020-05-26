@@ -233,7 +233,7 @@ set ttimeoutlen=50
 let g:airline_powerline_fonts = 1
 set guifont=Source\ Code\ Pro\ for\ Powerline "
 let g:Powerline_symbols = 'unicode'
-set laststatus=2
+set laststatus=2                  " Always show the status line
 
 filetype plugin indent on
 set t_Co=256
@@ -316,7 +316,7 @@ set hidden
 set cmdheight=2
 
 " Smaller updatetime for CursorHold & CursorHoldI
-set updatetime=200
+set updatetime=100
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c

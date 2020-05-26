@@ -1,9 +1,8 @@
 # open terminal
 alt - return [
-  *       : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
-  "kitty" ~
+ *       : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
+ "kitty" ~
 ]
-
 # toggle window split type vertical / horizontal
 lalt - a : yabai -m window --toggle split
 
