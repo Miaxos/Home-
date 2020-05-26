@@ -168,7 +168,7 @@ colorflag="-G"
 # ls long
 # alias ll="ls -l ${colorflag}"
 # all files, in long format
-alias l="ls -lF ${colorflag}"
+# alias l="ls -lF ${colorflag}"
 # to show directory's tree
 alias ltr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/ /'\'' -e '\''s/-/|/'\'''
 # to show hidden files
@@ -176,10 +176,12 @@ alias ltr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'
 # to show only directoies
 # alias lsd='ls -lF ${colorflag} | grep "^d"'
 
+alias l="exa --long --header --git --all --git-ignore --sort name"
 alias ls="exa"
 alias ll="exa -l"
 alias la="exa -laF"
 alias lsd='exa -lF | grep "^d"'
+alias cat='bat'
 
 
 # Open a new finder windows at the location
