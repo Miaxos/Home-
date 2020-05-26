@@ -50,7 +50,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  decorations: none
+  decorations: full
 
   # Startup Mode (changes require restart)
   #
@@ -287,7 +287,7 @@ selection:
   save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
+dynamic_title: false
 
 cursor:
   # Cursor style
@@ -435,7 +435,7 @@ key_bindings:
 # - { key: Minus,     mods: Alt|Shift,  chars: "]"                            }
 # - { key: N,         mods: Alt,        chars: "~"                            }
 # - { key: Period,    mods: Alt|Shift,  chars: "\\"                           }
-  - { key: N,      mods: Command, action: SpawnNewInstance                    }
+  - { key: Return,      mods: Alt, action: SpawnNewInstance                    }
 #  - { key: Key0,   mods: Command, action: ResetFontSize                      }
 #  - { key: Equals, mods: Command, action: IncreaseFontSize                   }
 #  - { key: Add,    mods: Command, action: IncreaseFontSize                   }
