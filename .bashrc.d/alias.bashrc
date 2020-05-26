@@ -105,7 +105,6 @@ alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 # to cache data with mpv
 alias mpv="mpv"
 alias mpvs="mpv --video-sync=display-resample"
-alias ls="exa"
 
 # ======================= Git =======================
 
@@ -165,17 +164,22 @@ alias .....="cd ../../../.."
 ## Alias folders
 colorflag="-G"
 # ls with color
-alias ls="command ls ${colorflag}"
+# alias ls="command ls ${colorflag}"
 # ls long
-alias ll="ls -l ${colorflag}"
+# alias ll="ls -l ${colorflag}"
 # all files, in long format
 alias l="ls -lF ${colorflag}"
 # to show directory's tree
 alias ltr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/ /'\'' -e '\''s/-/|/'\'''
 # to show hidden files
-alias la="ls -laF ${colorflag}"
+# alias la="ls -laF ${colorflag}"
 # to show only directoies
-alias lsd='ls -lF ${colorflag} | grep "^d"'
+# alias lsd='ls -lF ${colorflag} | grep "^d"'
+
+alias ls="exa"
+alias ll="exa -l"
+alias la="exa -laF"
+alias lsd='exa -lF | grep "^d"'
 
 
 # Open a new finder windows at the location
