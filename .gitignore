@@ -17,3 +17,8 @@ secret.bashrc
 .config/stetic/
 .config/wireshark/
 .config/xbuild/
+.config/configstore/*
+.config/evans/
+.config/karabiner/automatic_backups/
+.config/thefuck/
+.metals/
