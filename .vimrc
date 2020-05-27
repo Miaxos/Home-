@@ -106,6 +106,8 @@ Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'ryanoasis/vim-devicons'
 " Carbon
 Plugin 'kristijanhusak/vim-carbon-now-sh'
+" Float term for ranger
+Plugin 'voldikss/vim-floaterm'
 
 let g:carbon_now_sh_options =
       \ { 'bg': 'rgba(52%2C57%2C63%2C1)',
@@ -192,6 +194,9 @@ if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
   set undodir=~/.vim/backups
   set undofile
 endif
+
+" ================ Ranger ========================
+nmap <silent> <Leader>p :FloatermNew ranger<CR>
 
 " ================ KeyMappings ========================
 "
@@ -469,7 +474,7 @@ let NERDTreeQuitOnOpen=1
 map <C-P> :NERDTreeToggle<CR>
 
 " open nerd tree at the file with ù+p
-nnoremap <Leader>p :NERDTreeFind<CR>
+" nnoremap <Leader>p :NERDTreeFind<CR>
 
 " To disable the weird ? for help
 let NERDTreeMinimalUI = 0
