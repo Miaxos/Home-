@@ -10,6 +10,7 @@
   "javascript.preferences.noSemicolons": false,
   "typescript.preferences.quoteStyle": "single",
   "typescript.showUnused": true,
+  "eslint.autoFixOnSave": true,
   "typescript.referencesCodeLens.enable": true,
   "coc.preferences.codeLens.enable": true,
   "rust.clippy_preference": "on",
