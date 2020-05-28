@@ -6,6 +6,7 @@
   "tsserver.implicitProjectConfig.checkJs": false,
   "typescript.suggest.paths": true,
   "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.quoteStyle": "single",
   "javascript.preferences.noSemicolons": false,
   "typescript.preferences.quoteStyle": "single",
