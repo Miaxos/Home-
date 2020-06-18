@@ -40,6 +40,10 @@ eval $(thefuck --alias)
 
 eval "$(hub alias -s)"
 
+# ==================== GH Completion =======================
+
+eval "$(gh completion -s bash)"
+
 # ==================== Autojum =======================
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
