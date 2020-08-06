@@ -78,6 +78,8 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 " ## Cursors
 Plugin 'terryma/vim-multiple-cursors'
+" ## Github
+Plugin 'AGhost-7/critiq.vim'
 " Plugin 'kien/ctrlp.vim'
 " Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'nathanaelkane/vim-indent-guides'

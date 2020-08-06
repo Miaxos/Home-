@@ -1,1 +1,1 @@
-source ~/Dev/Home-/.installDir/enhancd/enhancd/init.sh
+# source ~/Dev/Home-/.installDir/enhancd/enhancd/init.sh

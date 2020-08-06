@@ -148,7 +148,7 @@ alias ta="tmux attach -t "
 # create session
 alias tn="tmux new -s "
 # reload config
-alias tr="tmux source-file ~/.tmux.conf"
+alias tre="tmux source-file ~/.tmux.conf"
 # kill session
 alias tk="tmux kill-session -t "
 
@@ -196,4 +196,3 @@ alias webserver="http-server . --ssl --color --cert='/Users/anthonygriffon/Downl
 
 # Rg fuzzy find
 alias rgf="rg --column --line-number --hidden --ignore-case --no-heading --color=always "
-

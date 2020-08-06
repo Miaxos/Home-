@@ -34,11 +34,29 @@ set -o vi
 
 # ==================== THEFUCK =======================
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
+
+# Coz it's to slow to eval the command
+function fuck () {
+  TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+  export TF_SHELL=bash;
+  export TF_ALIAS=fuck;
+  export TF_SHELL_ALIASES=$(alias);
+  export TF_HISTORY=$(fc -ln -10);
+  export PYTHONIOENCODING=utf-8;
+  TF_CMD=$(
+      thefuck THEFUCK_ARGUMENT_PLACEHOLDER "$@"
+      ) && eval "$TF_CMD";
+  unset TF_HISTORY;
+  export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+  history -s $TF_CMD;
+}
+
 
 # ==================== HUB =======================
 
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
+alias git=hub
 
 # ==================== GH Completion =======================
 
@@ -46,7 +64,7 @@ eval "$(gh completion -s bash)"
 
 # ==================== Autojum =======================
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # ==================== Fzf =======================
 

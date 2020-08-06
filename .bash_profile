@@ -39,6 +39,6 @@ done
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-source /Users/anthonygriffon/Library/Preferences/org.dystroy.broot/launcher/bash/br
+# source /Users/anthonygriffon/Library/Preferences/org.dystroy.broot/launcher/bash/br
 
 eval "$(starship init bash)"
