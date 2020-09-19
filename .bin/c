@@ -1,0 +1,41 @@
+#!/usr/bin/env sh
+# Wrap curl for easy headers, json, timing input/output
+
+case "$0" in
+    */c)
+        # defaults:
+        # no show_timing
+        # no json_reqrep
+        ;;
+    */cj)
+        json_reqrep=1
+        ;;
+    */ct)
+        show_timing=1
+        # NOTE: Appends an artificial newline to the response body in order to
+        # flush stdout before writing timing infos to stderr.
+        ;;
+esac
+
+curl -sS -D /dev/stderr \
+    ${json_reqrep:+-H 'Content-Type: application/json'} \
+    ${show_timing:+-w "
+%{stderr}
+----------
+curl timing report
+namelookup:     %{time_namelookup}
+connect:        %{time_connect}
+appconnect:     %{time_appconnect}
+pretransfer:    %{time_pretransfer}
+redirect:       %{time_redirect}
+starttransfer:  %{time_starttransfer}
+----------
+total:          %{time_total}
+"} "$@" | {
+    if [ -n "$json_reqrep" ]; then
+        rep=$(< /dev/stdin)
+        printf '%s\n' "$rep" | jq -C || printf '%s\n' "$rep"
+    else
+        cat
+    fi
+}
