@@ -1,13 +1,16 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Anthony Griffon
-  email = anthony.griffon@iadvize.com
+  email = anthony@griffon.one
 [core]
-	excludesfile = /Users/anthonygriffon/.gitignore_global
+	excludesfile = /Users/wizard/.gitignore_global
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
   ignorecase = false
 	editor = nvim
-	pager = diff-so-fancy | less --tabs=2 -RFX
+  # pager = diff-so-fancy | less --tabs=2 -RFX
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
 [alias]
   aa= !git add -u && git add . && git status
   cob = checkout -b
@@ -21,8 +24,18 @@
         git push -u origin $BRANCH_NAME; \
         hub pull-request -a miaxos --edit --browse; \
     };f"
+  fix =! git commit --fixup $(git --no-pager ls -n 50 | fzf | cut -d' ' -f1)
+  fixh =! git commit --fixup $(git --no-pager ls -n 50 | grep -v fixup! | fzf | cut -d' ' -f1)
+  addf =! git status --short | fzf -m | awk '{$1=$1}1' | cut -d' ' -f2- | xargs git add
+  restoref =! git status --short | fzf -m | awk '{$1=$1}1' | cut -d' ' -f2- | xargs git restore
   showf =! git show $(git --no-pager ls -n 50 | fzf | cut -d' ' -f1)
   difff =! git diff $(git status --short | fzf | rev | cut -d' ' -f1 | rev)
+  fa =! git fetch -a
+[commit]
+  gpgsign = true
+[color]
+	# Use colors in Git commands that are capable of colored output when outputting to the terminal
+	ui = auto
 [push]
   default = simple
   followTags = true
@@ -35,3 +48,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+# [diff]
+#	external = difft

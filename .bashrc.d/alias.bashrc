@@ -11,9 +11,15 @@
 # Enable aliases to be sudoed
 alias sudo='sudo '
 # Speedtest
-alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 # Meteo
 alias meteo="curl wttr.in/Nantes"
+
+# Zenly
+alias zcclip='export OPENSSL_DIR="$HOME/Dev/openssl/openssl-mac/"; cargo run --target x86_64-apple-darwin --package backendctl -- lint clippy'
+alias zccheck='export OPENSSL_DIR="$HOME/Dev/openssl/openssl-mac/"; cargo-watch -x "check --target x86_64-apple-darwin --all-features --package zendomain"'
+alias zcfmt='export OPENSSL_DIR="$HOME/Dev/openssl/openssl-mac/"; cargo run --target x86_64-apple-darwin --package backendctl -- lint fmt'
+alias zctest='export OPENSSL_DIR="$HOME/Dev/openssl/openssl-mac/"; cargo test --target x86_64-apple-darwin --all-features'
 
 # Random passwd
 alias rdmpwd="openssl rand -base64 32 | pbcopy"
@@ -54,16 +60,15 @@ alias listbans='iptables -L -v -n | grep -e Chain -e DROP'
 alias localip="ipconfig getifaddr en5"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
-
 # ====================================================
 
 # Google alias
-alias g='googler -n 7 -c en -l en '
+# alias g='googler -n 7 -c en -l en '
 
 # ======================= Tunnelblick =================
 
-alias tlc='tli connect $(tli list | fzf)'
-alias tld='tli disconnect $(tli status | grep CONNECTED | cut -d" " -f 1 | fzf)'
+# alias tlc='tli connect $(tli list | fzf)'
+# alias tld='tli disconnect $(tli status | grep CONNECTED | cut -d" " -f 1 | fzf)'
 
 # ======================= Nomad =======================
 
@@ -111,14 +116,15 @@ alias mpvs="mpv --video-sync=display-resample"
 ## Alias git
 alias gg="git pull"
 alias gp="git push"
-alias gc="git commit"
+alias gc="git commit --signoff"
 
 # With fuzzy search
 alias gkba='git checkout -b $(git branch -a | fzf)'
 alias gba='git checkout $(git branch | fzf)'
 alias gbm='git checkout $(git branch --merged | fzf)'
 alias gb='git checkout $(git branch --no-merged | fzf)'
-alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add '
+alias gaf='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add'
+alias gafp='git ls-files -m -o --exclude-standard | fzf -m --print0 | xargs -0 -o -t git add -p'
 
 alias gaa="git add *"
 alias ga="git add"
@@ -192,7 +198,7 @@ alias f='open -a Finder ./'
 alias drmae='docker rm $(docker ps -qa --no-trunc --filter "status=exited")'
 
 #webserver
-alias webserver="http-server . --ssl --color --cert='/Users/anthonygriffon/Downloads/crt.txt' --key='/Users/anthonygriffon/Downloads/key.txt' -p "
+# alias webserver="http-server . --ssl --color --cert='/Users/anthonygriffon/Downloads/crt.txt' --key='/Users/anthonygriffon/Downloads/key.txt' -p "
 
 # Rg fuzzy find
 alias rgf="rg --column --line-number --hidden --ignore-case --no-heading --color=always "

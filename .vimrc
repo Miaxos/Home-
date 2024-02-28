@@ -56,8 +56,6 @@ set clipboard=unnamed
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" ## ELM
-Plugin 'andys8/vim-elm-syntax'
 " ## Visual
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -78,8 +76,15 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 " ## Cursors
 Plugin 'terryma/vim-multiple-cursors'
+" ## Diff View
+Plugin 'nvim-lua/plenary.nvim'
+Plugin 'sindrets/diffview.nvim'
+" ## Tests
+Plugin 'vim-test/vim-test'
+Plugin 'jebaum/vim-tmuxify'
+Plugin 'rcarriga/vim-ultest', { 'do': ':UpdateRemotePlugins' }
 " ## Github
-Plugin 'AGhost-7/critiq.vim'
+" Plugin 'AGhost-7/critiq.vim'
 " Plugin 'kien/ctrlp.vim'
 " Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'nathanaelkane/vim-indent-guides'
@@ -100,16 +105,22 @@ Plugin 'leafgarland/typescript-vim'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
-" Scala
-Plugin 'derekwyatt/vim-scala'
-" C #
-Plugin 'OmniSharp/omnisharp-vim'
 " Vim dev icons
 Plugin 'ryanoasis/vim-devicons'
 " Carbon
 Plugin 'kristijanhusak/vim-carbon-now-sh'
 " Float term for ranger
 Plugin 'voldikss/vim-floaterm'
+" Undotree
+Plugin 'mbbill/undotree'
+
+" Treesitter
+Plugin 'nvim-treesitter/nvim-treesitter'
+Plugin 'nvim-treesitter/nvim-treesitter-context'
+
+" LanguageTool
+" Plugin 'dpelle/vim-LanguageTool'
+" let g:languagetool_jar = "/Users/wizard/.bin/LanguageTool-5.6/languagetool-commandline.jar"
 
 let g:carbon_now_sh_options =
       \ { 'bg': 'rgba(52%2C57%2C63%2C1)',
@@ -122,38 +133,41 @@ let g:OmniSharp_server_stdio = 1
 
 " Update semantic highlighting on BufEnter and InsertLeave
 let g:OmniSharp_highlight_types = 2
+" let g:OmniSharp_server_use_mono = 1
 
+" Fetch full documentation during omnicomplete requests.
+" By default, only Type/Method signatures are fetched. Full documentation can
+" still be fetched when you need it with the :OmniSharpDocumentation command.
+let g:omnicomplete_fetch_full_documentation = 1
 " OmniSharp Roselyn server
-let g:OmniSharp_server_path = '/Users/anthonygriffon/Dev/omnisharp-roslyn/artifacts/scripts/OmniSharp.Stdio'
+" let g:OmniSharp_server_path = '/Users/wizard/Dev/omnisharp-roslyn/artifacts/scripts/OmniSharp.Stdio'
 
 augroup omnisharp_commands
     autocmd!
 
     " Show type information automatically when the cursor stops moving
-    autocmd CursorHold *.cs call OmniSharp#TypeLookupWithoutDocumentation()
+    autocmd CursorHold *.cs :OmniSharpTypeLookup
 
     " The following commands are contextual, based on the cursor position.
-    autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
-    autocmd FileType cs nnoremap <buffer> gh :OmniSharpSignatureHelp<CR>
-    autocmd FileType cs nnoremap <buffer> tt :OmniSharpTypeLookup<CR>
-    autocmd FileType cs inoremap <buffer> go :OmniSharpSignatureHelp<CR>
-    autocmd FileType cs nnoremap <buffer> gdc :OmniSharpDocumentation<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>g :OmniSharpGotoDefinition<CR>
+    " autocmd FileType cs nnoremap <buffer> <Leader>k :OmniSharpSignatureHelp<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>k :OmniSharpDocumentation<CR>
 
-    autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
-    autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>i :OmniSharpFindImplementations<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>s :OmniSharpFindSymbol<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>r :OmniSharpFindUsages<CR>
 
     " Finds members in the current buffer
-    autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>m :OmniSharpFindMembers<CR>
 
-    autocmd FileType cs nnoremap <buffer> <Leader>fx :OmniSharpFixUsings<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>x :OmniSharpFixUsings<CR>
 
     " Navigate up and down by method/property/field
     autocmd FileType cs nnoremap <buffer> <C-k> :OmniSharpNavigateUp<CR>
     autocmd FileType cs nnoremap <buffer> <C-j> :OmniSharpNavigateDown<CR>
 
     " Find all code errors/warnings for the current solution and populate the quickfix window
-    autocmd FileType cs nnoremap <buffer> gcc :OmniSharpGlobalCodeCheck<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>d :OmniSharpGlobalCodeCheck<CR>
 augroup END
 
 " Plugin 'autozimu/LanguageClient-neovim', {
@@ -199,6 +213,7 @@ endif
 
 " ================ Ranger ========================
 nmap <silent> <Leader>p :FloatermNew ranger<CR>
+let g:floaterm_opener = 'edit'
 
 " ================ KeyMappings ========================
 "
@@ -354,16 +369,17 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Use `[c` and `]c` for navigate diagnostics
 nmap <silent> <Leader>z <Plug>(coc-diagnostic-prev)
 nmap <silent> <Leader>a <Plug>(coc-diagnostic-next)
+" nmap <silent> <C-k> <Plug>(coc-next)<CR>
+" nmap <silent> <C-j> <Plug>(coc-prev)<CR>
 
 " Remap keys for gotos
 nmap <silent> <Leader>g <Plug>(coc-definition)
-nmap <silent> <Leader>t <Plug>(coc-type-definition)
+" nmap <silent> <Leader>t <Plug>(coc-type-definition)
 nmap <silent> <Leader>i <Plug>(coc-implementation)
 nmap <silent> <Leader>r <Plug>(coc-references)
 
-" Metals decorator
-" https://scalameta.org/metals/docs/editors/vim.html#worksheets
-nmap <Leader>ws <Plug>(coc-metals-expand-decoration)
+" undotree
+nnoremap <silent> <Leader>u :UndotreeShow<CR>
 
 " Use K for show documentation in preview window
 nnoremap <silent> <Leader>k :call <SID>show_documentation()<CR>
@@ -436,16 +452,16 @@ nnoremap <silent> <leader>s  :<C-u>CocList -I symbols<cr>
 
 
 " Add diagnostic info for https://github.com/itchyny/lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
+" let g:lightline = {
+"       \ 'colorscheme': 'wombat',
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ],
+"       \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+"       \ },
+"       \ 'component_function': {
+"       \   'cocstatus': 'coc#status'
+"       \ },
+"       \ }
 
 
 
@@ -464,6 +480,16 @@ let g:lightline = {
 " nnoremap <silent> <space>s  :<C-u>Denite coc-service<cr>
 " Show links of current buffer
 " nnoremap <silent> <space>l  :<C-u>Denite coc-link<cr>
+" ================ TESTS ========================
+
+let g:tmuxify_custom_command = 'tmux new-window -t 1 -n test_panes -d'
+let test#strategy = "tmuxify"
+nmap <silent> <Leader>tt :TestNearest<CR>
+nmap <silent> <Leader>t :Ultest<CR>
+" // nmap <silent> <Leader>T :TestFile<CR>
+" nmap <silent> <leader>a :TestSuite<CR>
+" nmap <silent> <leader>f :TestLast<CR>
+" nmap <silent> <leader>g :TestVisit<CR>
 
 " ================ NERDTree Plugin ========================
 
@@ -481,83 +507,6 @@ map <C-P> :NERDTreeToggle<CR>
 " To disable the weird ? for help
 let NERDTreeMinimalUI = 0
 let NERDTreeDirArrows = 1
-
-" ================ Vim GitGutter ========================
-
-set updatetime=100
-
-" ================ ALE Plugins ========================
-
-" JS - AlE Correction
-" let g:ale_linters = { 'javascript': ['eslint', 'tsserver'] }
-let g:ale_fix_on_save = 1
-let g:ale_lint_on_text_changed = 1
-let g:ale_set_highlights = 1
-let g:ale_javascript_eslint_use_global = 0
-let g:multi_cursor_next_key='<C-n>'
-let g:ale_completion_enabled = 1
-
-" ================ DEOPLETE Plugins ========================
-
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources#ternjs#docs = 1
-
-" ================ RUSTFMT ================================
-
-let g:rustfmt_autosave = 1
-
-
-" ================ DEOPLETE TernJS Plugins ========================
-"
-let g:deoplete#sources#ternjs#filetypes = [ 'js', 'jsx' ]
-" Set bin if you have many instalations
-let g:deoplete#sources#ternjs#tern_bin = '/usr/local/bin/tern'
-let g:deoplete#sources#ternjs#timeout = 1
-
-" Whether to include the types of the completions in the result data. Default: 0
-let g:deoplete#sources#ternjs#types = 1
-
-" Whether to include the distance (in scopes for variables, in prototypes for
-" properties) between the completions and the origin position in the result
-" data. Default: 0
-let g:deoplete#sources#ternjs#depths = 1
-
-" Whether to include documentation strings (if found) in the result data.
-" Default: 0
-let g:deoplete#sources#ternjs#docs = 1
-
-" When on, only completions that match the current word at the given point will
-" be returned. Turn this off to get all results, so that you can filter on the
-" client side. Default: 1
-let g:deoplete#sources#ternjs#filter = 0
-
-" Whether to use a case-insensitive compare between the current word and
-" potential completions. Default 0
-let g:deoplete#sources#ternjs#case_insensitive = 1
-
-" When completing a property and no completions are found, Tern will use some
-" heuristics to try and return some properties anyway. Set this to 0 to
-" turn that off. Default: 1
-let g:deoplete#sources#ternjs#guess = 0
-
-" Determines whether the result set will be sorted. Default: 1
-let g:deoplete#sources#ternjs#sort = 0
-
-" When disabled, only the text before the given position is considered part of
-" the word. When enabled (the default), the whole variable name that the cursor
-" is on will be included. Default: 1
-let g:deoplete#sources#ternjs#expand_word_forward = 0
-
-" Whether to ignore the properties of Object.prototype unless they have been
-" spelled out by at least two characters. Default: 1
-let g:deoplete#sources#ternjs#omit_object_prototype = 0
-
-" Whether to include JavaScript keywords when completing something that is not
-" a property. Default: 0
-let g:deoplete#sources#ternjs#include_keywords = 1
-
-" If completions should be returned when inside a literal. Default: 1
-let g:deoplete#sources#ternjs#in_literal = 0
 
 " Required for operations modifying multiple buffers like rename.
 set hidden

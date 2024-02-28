@@ -1,4 +1,5 @@
-IGNORE_FILES="install.sh|remove.sh|README.md|.git|.gitignore"
+IGNORE_FILES="install.sh|remove.sh|README.md|.git|.gitignore|LaunchAgents"
+
 
 
 HOME=~/
